@@ -1,0 +1,1004 @@
+2024-06-24T17:25:31.334+06:00  INFO 4348 --- [producer] [main] com.event.producer.ProducerApplication   : Starting ProducerApplication using Java 17.0.10 with PID 4348 (D:\PRACTICE\Java\Springboot\kafka\producer\build\classes\java\main started by sharafat.hossain in D:\PRACTICE\Java\Springboot\kafka\producer)
+2024-06-24T17:25:31.338+06:00  INFO 4348 --- [producer] [main] com.event.producer.ProducerApplication   : No active profile set, falling back to 1 default profile: "default"
+2024-06-24T17:25:32.292+06:00  INFO 4348 --- [producer] [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2024-06-24T17:25:32.294+06:00  INFO 4348 --- [producer] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-06-24T17:25:32.389+06:00  INFO 4348 --- [producer] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 79 ms. Found 1 JPA repository interface.
+2024-06-24T17:25:32.442+06:00  INFO 4348 --- [producer] [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2024-06-24T17:25:32.442+06:00  INFO 4348 --- [producer] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2024-06-24T17:25:32.450+06:00  INFO 4348 --- [producer] [main] .RepositoryConfigurationExtensionSupport : Spring Data MongoDB - Could not safely identify store assignment for repository candidate interface com.event.producer.repo.StudentRepository; If you want this repository to be a MongoDB repository, consider annotating your entities with one of these annotations: org.springframework.data.mongodb.core.mapping.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.mongodb.repository.MongoRepository
+2024-06-24T17:25:32.450+06:00  INFO 4348 --- [producer] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 7 ms. Found 0 MongoDB repository interfaces.
+2024-06-24T17:25:33.303+06:00  INFO 4348 --- [producer] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-06-24T17:25:33.322+06:00  INFO 4348 --- [producer] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-06-24T17:25:33.322+06:00  INFO 4348 --- [producer] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.24]
+2024-06-24T17:25:33.423+06:00  INFO 4348 --- [producer] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-06-24T17:25:33.424+06:00  INFO 4348 --- [producer] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2027 ms
+2024-06-24T17:25:33.526+06:00  WARN 4348 --- [producer] [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Failed to initialize dependency 'dataSourceScriptDatabaseInitializer' of LoadTimeWeaverAware bean 'entityManagerFactory': Error creating bean with name 'dataSourceScriptDatabaseInitializer' defined in class path resource [org/springframework/boot/autoconfigure/sql/init/DataSourceInitializationConfiguration.class]: Unsatisfied dependency expressed through method 'dataSourceScriptDatabaseInitializer' parameter 0: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception with message: Failed to determine a suitable driver class
+2024-06-24T17:25:33.529+06:00  INFO 4348 --- [producer] [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2024-06-24T17:25:33.551+06:00  INFO 4348 --- [producer] [main] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-06-24T17:25:33.580+06:00 ERROR 4348 --- [producer] [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to configure a DataSource: 'url' attribute is not specified and no embedded datasource could be configured.
+
+Reason: Failed to determine a suitable driver class
+
+
+Action:
+
+Consider the following:
+	If you want an embedded database (H2, HSQL or Derby), please put it on the classpath.
+	If you have database settings to be loaded from a particular profile you may need to activate it (no profiles are currently active).
+
+2024-06-24T17:31:44.920+06:00  INFO 24068 --- [producer] [main] com.event.producer.ProducerApplication   : Starting ProducerApplication using Java 17.0.10 with PID 24068 (D:\PRACTICE\Java\Springboot\kafka\producer\build\classes\java\main started by sharafat.hossain in D:\PRACTICE\Java\Springboot\kafka\producer)
+2024-06-24T17:31:44.926+06:00  INFO 24068 --- [producer] [main] com.event.producer.ProducerApplication   : No active profile set, falling back to 1 default profile: "default"
+2024-06-24T17:31:46.152+06:00  INFO 24068 --- [producer] [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2024-06-24T17:31:46.156+06:00  INFO 24068 --- [producer] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-06-24T17:31:46.273+06:00  INFO 24068 --- [producer] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 99 ms. Found 1 JPA repository interface.
+2024-06-24T17:31:46.345+06:00  INFO 24068 --- [producer] [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2024-06-24T17:31:46.345+06:00  INFO 24068 --- [producer] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2024-06-24T17:31:46.355+06:00  INFO 24068 --- [producer] [main] .RepositoryConfigurationExtensionSupport : Spring Data MongoDB - Could not safely identify store assignment for repository candidate interface com.event.producer.repo.StudentRepository; If you want this repository to be a MongoDB repository, consider annotating your entities with one of these annotations: org.springframework.data.mongodb.core.mapping.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.mongodb.repository.MongoRepository
+2024-06-24T17:31:46.356+06:00  INFO 24068 --- [producer] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 9 ms. Found 0 MongoDB repository interfaces.
+2024-06-24T17:31:47.321+06:00  INFO 24068 --- [producer] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-06-24T17:31:47.344+06:00  INFO 24068 --- [producer] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-06-24T17:31:47.345+06:00  INFO 24068 --- [producer] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.24]
+2024-06-24T17:31:47.468+06:00  INFO 24068 --- [producer] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-06-24T17:31:47.469+06:00  INFO 24068 --- [producer] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2462 ms
+2024-06-24T17:31:47.599+06:00  WARN 24068 --- [producer] [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Failed to initialize dependency 'dataSourceScriptDatabaseInitializer' of LoadTimeWeaverAware bean 'entityManagerFactory': Error creating bean with name 'dataSourceScriptDatabaseInitializer' defined in class path resource [org/springframework/boot/autoconfigure/sql/init/DataSourceInitializationConfiguration.class]: Unsatisfied dependency expressed through method 'dataSourceScriptDatabaseInitializer' parameter 0: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception with message: Failed to determine a suitable driver class
+2024-06-24T17:31:47.604+06:00  INFO 24068 --- [producer] [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2024-06-24T17:31:47.628+06:00  INFO 24068 --- [producer] [main] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-06-24T17:31:47.661+06:00 ERROR 24068 --- [producer] [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to configure a DataSource: 'url' attribute is not specified and no embedded datasource could be configured.
+
+Reason: Failed to determine a suitable driver class
+
+
+Action:
+
+Consider the following:
+	If you want an embedded database (H2, HSQL or Derby), please put it on the classpath.
+	If you have database settings to be loaded from a particular profile you may need to activate it (no profiles are currently active).
+
+2024-06-24T17:32:05.604+06:00  INFO 26996 --- [producer] [main] com.event.producer.ProducerApplication   : Starting ProducerApplication using Java 17.0.10 with PID 26996 (D:\PRACTICE\Java\Springboot\kafka\producer\build\classes\java\main started by sharafat.hossain in D:\PRACTICE\Java\Springboot\kafka\producer)
+2024-06-24T17:32:05.609+06:00  INFO 26996 --- [producer] [main] com.event.producer.ProducerApplication   : No active profile set, falling back to 1 default profile: "default"
+2024-06-24T17:32:06.832+06:00  INFO 26996 --- [producer] [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2024-06-24T17:32:06.837+06:00  INFO 26996 --- [producer] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-06-24T17:32:06.947+06:00  INFO 26996 --- [producer] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 93 ms. Found 1 JPA repository interface.
+2024-06-24T17:32:07.008+06:00  INFO 26996 --- [producer] [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2024-06-24T17:32:07.008+06:00  INFO 26996 --- [producer] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2024-06-24T17:32:07.016+06:00  INFO 26996 --- [producer] [main] .RepositoryConfigurationExtensionSupport : Spring Data MongoDB - Could not safely identify store assignment for repository candidate interface com.event.producer.repo.StudentRepository; If you want this repository to be a MongoDB repository, consider annotating your entities with one of these annotations: org.springframework.data.mongodb.core.mapping.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.mongodb.repository.MongoRepository
+2024-06-24T17:32:07.017+06:00  INFO 26996 --- [producer] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 8 ms. Found 0 MongoDB repository interfaces.
+2024-06-24T17:32:07.968+06:00  INFO 26996 --- [producer] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-06-24T17:32:07.986+06:00  INFO 26996 --- [producer] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-06-24T17:32:07.987+06:00  INFO 26996 --- [producer] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.24]
+2024-06-24T17:32:08.105+06:00  INFO 26996 --- [producer] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-06-24T17:32:08.106+06:00  INFO 26996 --- [producer] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2426 ms
+2024-06-24T17:32:08.237+06:00  WARN 26996 --- [producer] [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Failed to initialize dependency 'dataSourceScriptDatabaseInitializer' of LoadTimeWeaverAware bean 'entityManagerFactory': Error creating bean with name 'dataSourceScriptDatabaseInitializer' defined in class path resource [org/springframework/boot/autoconfigure/sql/init/DataSourceInitializationConfiguration.class]: Unsatisfied dependency expressed through method 'dataSourceScriptDatabaseInitializer' parameter 0: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception with message: Failed to determine a suitable driver class
+2024-06-24T17:32:08.242+06:00  INFO 26996 --- [producer] [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2024-06-24T17:32:08.265+06:00  INFO 26996 --- [producer] [main] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-06-24T17:32:08.301+06:00 ERROR 26996 --- [producer] [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to configure a DataSource: 'url' attribute is not specified and no embedded datasource could be configured.
+
+Reason: Failed to determine a suitable driver class
+
+
+Action:
+
+Consider the following:
+	If you want an embedded database (H2, HSQL or Derby), please put it on the classpath.
+	If you have database settings to be loaded from a particular profile you may need to activate it (no profiles are currently active).
+
+2024-06-24T17:32:28.713+06:00  INFO 20608 --- [producer] [main] com.event.producer.ProducerApplication   : Starting ProducerApplication using Java 17.0.10 with PID 20608 (D:\PRACTICE\Java\Springboot\kafka\producer\build\classes\java\main started by sharafat.hossain in D:\PRACTICE\Java\Springboot\kafka\producer)
+2024-06-24T17:32:28.717+06:00  INFO 20608 --- [producer] [main] com.event.producer.ProducerApplication   : No active profile set, falling back to 1 default profile: "default"
+2024-06-24T17:32:29.831+06:00  INFO 20608 --- [producer] [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2024-06-24T17:32:29.836+06:00  INFO 20608 --- [producer] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-06-24T17:32:29.945+06:00  INFO 20608 --- [producer] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 92 ms. Found 1 JPA repository interface.
+2024-06-24T17:32:30.009+06:00  INFO 20608 --- [producer] [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2024-06-24T17:32:30.010+06:00  INFO 20608 --- [producer] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2024-06-24T17:32:30.018+06:00  INFO 20608 --- [producer] [main] .RepositoryConfigurationExtensionSupport : Spring Data MongoDB - Could not safely identify store assignment for repository candidate interface com.event.producer.repo.StudentRepository; If you want this repository to be a MongoDB repository, consider annotating your entities with one of these annotations: org.springframework.data.mongodb.core.mapping.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.mongodb.repository.MongoRepository
+2024-06-24T17:32:30.018+06:00  INFO 20608 --- [producer] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 7 ms. Found 0 MongoDB repository interfaces.
+2024-06-24T17:32:30.967+06:00  INFO 20608 --- [producer] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-06-24T17:32:30.991+06:00  INFO 20608 --- [producer] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-06-24T17:32:30.992+06:00  INFO 20608 --- [producer] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.24]
+2024-06-24T17:32:31.108+06:00  INFO 20608 --- [producer] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-06-24T17:32:31.109+06:00  INFO 20608 --- [producer] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2328 ms
+2024-06-24T17:32:31.239+06:00  WARN 20608 --- [producer] [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Failed to initialize dependency 'dataSourceScriptDatabaseInitializer' of LoadTimeWeaverAware bean 'entityManagerFactory': Error creating bean with name 'dataSourceScriptDatabaseInitializer' defined in class path resource [org/springframework/boot/autoconfigure/sql/init/DataSourceInitializationConfiguration.class]: Unsatisfied dependency expressed through method 'dataSourceScriptDatabaseInitializer' parameter 0: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception with message: Failed to determine a suitable driver class
+2024-06-24T17:32:31.244+06:00  INFO 20608 --- [producer] [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2024-06-24T17:32:31.267+06:00  INFO 20608 --- [producer] [main] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-06-24T17:32:31.316+06:00 ERROR 20608 --- [producer] [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to configure a DataSource: 'url' attribute is not specified and no embedded datasource could be configured.
+
+Reason: Failed to determine a suitable driver class
+
+
+Action:
+
+Consider the following:
+	If you want an embedded database (H2, HSQL or Derby), please put it on the classpath.
+	If you have database settings to be loaded from a particular profile you may need to activate it (no profiles are currently active).
+
+2024-06-24T17:36:44.563+06:00  INFO 19636 --- [producer] [main] com.event.producer.ProducerApplication   : Starting ProducerApplication using Java 17.0.10 with PID 19636 (D:\PRACTICE\Java\Springboot\kafka\producer\build\classes\java\main started by sharafat.hossain in D:\PRACTICE\Java\Springboot\kafka\producer)
+2024-06-24T17:36:44.565+06:00  INFO 19636 --- [producer] [main] com.event.producer.ProducerApplication   : No active profile set, falling back to 1 default profile: "default"
+2024-06-24T17:36:45.259+06:00  INFO 19636 --- [producer] [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2024-06-24T17:36:45.261+06:00  INFO 19636 --- [producer] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2024-06-24T17:36:45.293+06:00  INFO 19636 --- [producer] [main] .RepositoryConfigurationExtensionSupport : Spring Data MongoDB - Could not safely identify store assignment for repository candidate interface com.event.producer.repo.StudentRepository; If you want this repository to be a MongoDB repository, consider annotating your entities with one of these annotations: org.springframework.data.mongodb.core.mapping.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.mongodb.repository.MongoRepository
+2024-06-24T17:36:45.294+06:00  INFO 19636 --- [producer] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 28 ms. Found 0 MongoDB repository interfaces.
+2024-06-24T17:36:45.761+06:00  INFO 19636 --- [producer] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-06-24T17:36:45.771+06:00  INFO 19636 --- [producer] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-06-24T17:36:45.771+06:00  INFO 19636 --- [producer] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.24]
+2024-06-24T17:36:45.821+06:00  INFO 19636 --- [producer] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-06-24T17:36:45.822+06:00  INFO 19636 --- [producer] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1217 ms
+2024-06-24T17:36:45.879+06:00  WARN 19636 --- [producer] [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'producerController': Unsatisfied dependency expressed through field 'studentRegistrationService': Error creating bean with name 'studentRegistrationServiceImpl': Unsatisfied dependency expressed through field 'studentRepository': No qualifying bean of type 'com.event.producer.repo.StudentRepository' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2024-06-24T17:36:45.882+06:00  INFO 19636 --- [producer] [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2024-06-24T17:36:45.894+06:00  INFO 19636 --- [producer] [main] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-06-24T17:36:45.913+06:00 ERROR 19636 --- [producer] [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field studentRepository in com.event.producer.service.StudentRegistrationServiceImpl required a bean of type 'com.event.producer.repo.StudentRepository' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'com.event.producer.repo.StudentRepository' in your configuration.
+
+2024-06-24T17:38:23.174+06:00  INFO 17312 --- [producer] [main] com.event.producer.ProducerApplication   : Starting ProducerApplication using Java 17.0.10 with PID 17312 (D:\PRACTICE\Java\Springboot\kafka\producer\build\classes\java\main started by sharafat.hossain in D:\PRACTICE\Java\Springboot\kafka\producer)
+2024-06-24T17:38:23.176+06:00  INFO 17312 --- [producer] [main] com.event.producer.ProducerApplication   : No active profile set, falling back to 1 default profile: "default"
+2024-06-24T17:38:23.684+06:00  INFO 17312 --- [producer] [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2024-06-24T17:38:23.685+06:00  INFO 17312 --- [producer] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2024-06-24T17:38:23.710+06:00  INFO 17312 --- [producer] [main] .RepositoryConfigurationExtensionSupport : Spring Data MongoDB - Could not safely identify store assignment for repository candidate interface com.event.producer.repo.StudentRepository; If you want this repository to be a MongoDB repository, consider annotating your entities with one of these annotations: org.springframework.data.mongodb.core.mapping.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.mongodb.repository.MongoRepository
+2024-06-24T17:38:23.711+06:00  INFO 17312 --- [producer] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 22 ms. Found 0 MongoDB repository interfaces.
+2024-06-24T17:38:24.089+06:00  INFO 17312 --- [producer] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-06-24T17:38:24.097+06:00  INFO 17312 --- [producer] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-06-24T17:38:24.098+06:00  INFO 17312 --- [producer] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.24]
+2024-06-24T17:38:24.144+06:00  INFO 17312 --- [producer] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-06-24T17:38:24.144+06:00  INFO 17312 --- [producer] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 926 ms
+2024-06-24T17:38:24.293+06:00 DEBUG 17312 --- [producer] [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 3 mappings in 'requestMappingHandlerMapping'
+2024-06-24T17:38:24.367+06:00 DEBUG 17312 --- [producer] [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2024-06-24T17:38:24.396+06:00 DEBUG 17312 --- [producer] [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-06-24T17:38:24.421+06:00 DEBUG 17312 --- [producer] [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-06-24T17:38:24.598+06:00  INFO 17312 --- [producer] [main] org.mongodb.driver.client                : MongoClient with metadata {"driver": {"name": "mongo-java-driver|sync|spring-boot", "version": "5.0.1"}, "os": {"type": "Windows", "name": "Windows 10", "architecture": "amd64", "version": "10.0"}, "platform": "Java/Amazon.com Inc./17.0.10+7-LTS"} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=null, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=MongoCredential{mechanism=null, userName='root', source='admin', password=<hidden>, mechanismProperties=<hidden>}, transportSettings=null, commandListeners=[], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, CollectionCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.client.model.mql.ExpressionCodecProvider@171dc7c3, com.mongodb.Jep395RecordCodecProvider@72b0a004, com.mongodb.KotlinCodecProvider@4cdba2ed]}, loggerSettings=LoggerSettings{maxDocumentLength=1000}, clusterSettings={hosts=[localhost:27017], srvServiceName=mongodb, mode=SINGLE, requiredClusterType=UNKNOWN, requiredReplicaSetName='null', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='15 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=false, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=JAVA_LEGACY, serverApi=null, autoEncryptionSettings=null, dnsClient=null, inetAddressResolver=null, contextProvider=null}
+2024-06-24T17:38:24.611+06:00  INFO 17312 --- [producer] [cluster-ClusterId{value='66795ab0ca57bb48fcbf60c3', description='null'}-localhost:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=21, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=18802200}
+2024-06-24T17:38:24.889+06:00  INFO 17312 --- [producer] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-06-24T17:38:24.898+06:00  INFO 17312 --- [producer] [main] com.event.producer.ProducerApplication   : Started ProducerApplication in 2.078 seconds (process running for 2.564)
+2024-06-24T17:42:12.040+06:00  INFO 12424 --- [producer] [main] com.event.producer.ProducerApplication   : Starting ProducerApplication using Java 17.0.10 with PID 12424 (D:\PRACTICE\Java\Springboot\kafka\producer\build\classes\java\main started by sharafat.hossain in D:\PRACTICE\Java\Springboot\kafka\producer)
+2024-06-24T17:42:12.043+06:00  INFO 12424 --- [producer] [main] com.event.producer.ProducerApplication   : No active profile set, falling back to 1 default profile: "default"
+2024-06-24T17:42:12.535+06:00  INFO 12424 --- [producer] [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2024-06-24T17:42:12.537+06:00  INFO 12424 --- [producer] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2024-06-24T17:42:12.563+06:00  INFO 12424 --- [producer] [main] .RepositoryConfigurationExtensionSupport : Spring Data MongoDB - Could not safely identify store assignment for repository candidate interface com.event.producer.repo.StudentRepository; If you want this repository to be a MongoDB repository, consider annotating your entities with one of these annotations: org.springframework.data.mongodb.core.mapping.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.mongodb.repository.MongoRepository
+2024-06-24T17:42:12.564+06:00  INFO 12424 --- [producer] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 22 ms. Found 0 MongoDB repository interfaces.
+2024-06-24T17:42:12.927+06:00  INFO 12424 --- [producer] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-06-24T17:42:12.936+06:00  INFO 12424 --- [producer] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-06-24T17:42:12.936+06:00  INFO 12424 --- [producer] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.24]
+2024-06-24T17:42:12.982+06:00  INFO 12424 --- [producer] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-06-24T17:42:12.982+06:00  INFO 12424 --- [producer] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 906 ms
+2024-06-24T17:42:13.028+06:00  WARN 12424 --- [producer] [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'producerController': Unsatisfied dependency expressed through field 'studentRegistrationService': Error creating bean with name 'studentRegistrationServiceImpl': Unsatisfied dependency expressed through field 'studentRepository': No qualifying bean of type 'com.event.producer.repo.StudentRepository' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2024-06-24T17:42:13.030+06:00  INFO 12424 --- [producer] [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2024-06-24T17:42:13.042+06:00  INFO 12424 --- [producer] [main] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-06-24T17:42:13.064+06:00 ERROR 12424 --- [producer] [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field studentRepository in com.event.producer.service.StudentRegistrationServiceImpl required a bean of type 'com.event.producer.repo.StudentRepository' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'com.event.producer.repo.StudentRepository' in your configuration.
+
+2024-06-24T17:42:30.962+06:00  INFO 26864 --- [producer] [main] com.event.producer.ProducerApplication   : Starting ProducerApplication using Java 17.0.10 with PID 26864 (D:\PRACTICE\Java\Springboot\kafka\producer\build\classes\java\main started by sharafat.hossain in D:\PRACTICE\Java\Springboot\kafka\producer)
+2024-06-24T17:42:30.964+06:00  INFO 26864 --- [producer] [main] com.event.producer.ProducerApplication   : No active profile set, falling back to 1 default profile: "default"
+2024-06-24T17:42:31.463+06:00  INFO 26864 --- [producer] [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2024-06-24T17:42:31.465+06:00  INFO 26864 --- [producer] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2024-06-24T17:42:31.489+06:00  INFO 26864 --- [producer] [main] .RepositoryConfigurationExtensionSupport : Spring Data MongoDB - Could not safely identify store assignment for repository candidate interface com.event.producer.repo.StudentRepository; If you want this repository to be a MongoDB repository, consider annotating your entities with one of these annotations: org.springframework.data.mongodb.core.mapping.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.mongodb.repository.MongoRepository
+2024-06-24T17:42:31.489+06:00  INFO 26864 --- [producer] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 20 ms. Found 0 MongoDB repository interfaces.
+2024-06-24T17:42:31.886+06:00  INFO 26864 --- [producer] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-06-24T17:42:31.894+06:00  INFO 26864 --- [producer] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-06-24T17:42:31.895+06:00  INFO 26864 --- [producer] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.24]
+2024-06-24T17:42:31.942+06:00  INFO 26864 --- [producer] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-06-24T17:42:31.943+06:00  INFO 26864 --- [producer] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 945 ms
+2024-06-24T17:42:32.079+06:00 DEBUG 26864 --- [producer] [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 3 mappings in 'requestMappingHandlerMapping'
+2024-06-24T17:42:32.146+06:00 DEBUG 26864 --- [producer] [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2024-06-24T17:42:32.173+06:00 DEBUG 26864 --- [producer] [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-06-24T17:42:32.202+06:00 DEBUG 26864 --- [producer] [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-06-24T17:42:32.346+06:00  INFO 26864 --- [producer] [main] org.mongodb.driver.client                : MongoClient with metadata {"driver": {"name": "mongo-java-driver|sync|spring-boot", "version": "5.0.1"}, "os": {"type": "Windows", "name": "Windows 10", "architecture": "amd64", "version": "10.0"}, "platform": "Java/Amazon.com Inc./17.0.10+7-LTS"} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=null, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=MongoCredential{mechanism=null, userName='root', source='admin', password=<hidden>, mechanismProperties=<hidden>}, transportSettings=null, commandListeners=[], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, CollectionCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.client.model.mql.ExpressionCodecProvider@52f6900a, com.mongodb.Jep395RecordCodecProvider@7bbcf6f0, com.mongodb.KotlinCodecProvider@2b80e5a9]}, loggerSettings=LoggerSettings{maxDocumentLength=1000}, clusterSettings={hosts=[localhost:27017], srvServiceName=mongodb, mode=SINGLE, requiredClusterType=UNKNOWN, requiredReplicaSetName='null', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='15 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=false, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=JAVA_LEGACY, serverApi=null, autoEncryptionSettings=null, dnsClient=null, inetAddressResolver=null, contextProvider=null}
+2024-06-24T17:42:32.358+06:00  INFO 26864 --- [producer] [cluster-ClusterId{value='66795ba89ad68c053274de1d', description='null'}-localhost:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=21, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=20454700}
+2024-06-24T17:42:32.611+06:00  INFO 26864 --- [producer] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-06-24T17:42:32.621+06:00  INFO 26864 --- [producer] [main] com.event.producer.ProducerApplication   : Started ProducerApplication in 2.008 seconds (process running for 2.474)
+2024-06-24T17:46:49.927+06:00  INFO 26864 --- [producer] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-06-24T17:46:49.928+06:00  INFO 26864 --- [producer] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-06-24T17:46:49.929+06:00 DEBUG 26864 --- [producer] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2024-06-24T17:46:49.929+06:00 DEBUG 26864 --- [producer] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2024-06-24T17:46:49.929+06:00 DEBUG 26864 --- [producer] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2024-06-24T17:46:49.930+06:00 DEBUG 26864 --- [producer] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@62b57479
+2024-06-24T17:46:49.931+06:00 DEBUG 26864 --- [producer] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@62a68bcb
+2024-06-24T17:46:49.932+06:00 DEBUG 26864 --- [producer] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2024-06-24T17:46:49.932+06:00  INFO 26864 --- [producer] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
+2024-06-24T17:46:49.947+06:00 DEBUG 26864 --- [producer] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : POST "/api/student/register/v1", parameters={}
+2024-06-24T17:46:49.967+06:00 DEBUG 26864 --- [producer] [http-nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.event.producer.controller.ProducerController#create(CreateStudentRequest)
+2024-06-24T17:46:50.101+06:00 DEBUG 26864 --- [producer] [http-nio-8080-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [CreateStudentRequest(firstName=djd, lastName=djdd, email=shddh@gmail.com)]
+2024-06-24T17:46:50.112+06:00  INFO 26864 --- [producer] [http-nio-8080-exec-1] c.e.p.controller.ProducerController      : Get request for student registration. Student Model: CreateStudentRequest(firstName=djd, lastName=djdd, email=shddh@gmail.com)
+2024-06-24T17:47:29.035+06:00 DEBUG 26864 --- [producer] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Failed to complete request: java.lang.NullPointerException: Cannot invoke "com.event.producer.repo.StudentRepository.save(Object)" because "this.studentRepository" is null
+2024-06-24T17:47:29.038+06:00 ERROR 26864 --- [producer] [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.NullPointerException: Cannot invoke "com.event.producer.repo.StudentRepository.save(Object)" because "this.studentRepository" is null] with root cause
+
+java.lang.NullPointerException: Cannot invoke "com.event.producer.repo.StudentRepository.save(Object)" because "this.studentRepository" is null
+	at com.event.producer.service.StudentRegistrationServiceImpl.register(StudentRegistrationServiceImpl.java:28) ~[main/:na]
+	at com.event.producer.controller.ProducerController.create(ProducerController.java:30) ~[main/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:255) ~[spring-web-6.1.8.jar:6.1.8]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:188) ~[spring-web-6.1.8.jar:6.1.8]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.1.8.jar:6.1.8]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:926) ~[spring-webmvc-6.1.8.jar:6.1.8]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:831) ~[spring-webmvc-6.1.8.jar:6.1.8]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.1.8.jar:6.1.8]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089) ~[spring-webmvc-6.1.8.jar:6.1.8]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.1.8.jar:6.1.8]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.1.8.jar:6.1.8]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914) ~[spring-webmvc-6.1.8.jar:6.1.8]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590) ~[tomcat-embed-core-10.1.24.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.1.8.jar:6.1.8]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.24.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.24.jar:10.1.24]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.1.8.jar:6.1.8]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.8.jar:6.1.8]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.1.8.jar:6.1.8]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.8.jar:6.1.8]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.1.8.jar:6.1.8]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.8.jar:6.1.8]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:389) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at java.base/java.lang.Thread.run(Thread.java:840) ~[na:na]
+
+2024-06-24T17:47:29.058+06:00 DEBUG 26864 --- [producer] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for POST "/error", parameters={}
+2024-06-24T17:47:29.061+06:00 DEBUG 26864 --- [producer] [http-nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2024-06-24T17:47:29.084+06:00 DEBUG 26864 --- [producer] [http-nio-8080-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2024-06-24T17:47:29.087+06:00 DEBUG 26864 --- [producer] [http-nio-8080-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Mon Jun 24 17:47:29 ALMT 2024, status=500, error=Internal Server Error, path=/api/student (truncated)...]
+2024-06-24T17:47:29.121+06:00 DEBUG 26864 --- [producer] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 500
+2024-06-24T17:48:49.919+06:00  INFO 22872 --- [producer] [main] com.event.producer.ProducerApplication   : Starting ProducerApplication using Java 17.0.10 with PID 22872 (D:\PRACTICE\Java\Springboot\kafka\producer\build\classes\java\main started by sharafat.hossain in D:\PRACTICE\Java\Springboot\kafka\producer)
+2024-06-24T17:48:49.924+06:00  INFO 22872 --- [producer] [main] com.event.producer.ProducerApplication   : No active profile set, falling back to 1 default profile: "default"
+2024-06-24T17:48:50.824+06:00  INFO 22872 --- [producer] [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2024-06-24T17:48:50.826+06:00  INFO 22872 --- [producer] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2024-06-24T17:48:50.870+06:00  INFO 22872 --- [producer] [main] .RepositoryConfigurationExtensionSupport : Spring Data MongoDB - Could not safely identify store assignment for repository candidate interface com.event.producer.repo.StudentRepository; If you want this repository to be a MongoDB repository, consider annotating your entities with one of these annotations: org.springframework.data.mongodb.core.mapping.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.mongodb.repository.MongoRepository
+2024-06-24T17:48:50.871+06:00  INFO 22872 --- [producer] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 41 ms. Found 0 MongoDB repository interfaces.
+2024-06-24T17:48:51.565+06:00  INFO 22872 --- [producer] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-06-24T17:48:51.584+06:00  INFO 22872 --- [producer] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-06-24T17:48:51.584+06:00  INFO 22872 --- [producer] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.24]
+2024-06-24T17:48:51.673+06:00  INFO 22872 --- [producer] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-06-24T17:48:51.674+06:00  INFO 22872 --- [producer] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1685 ms
+2024-06-24T17:48:51.799+06:00  WARN 22872 --- [producer] [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'producerController': Unsatisfied dependency expressed through field 'studentRegistrationService': Error creating bean with name 'studentRegistrationServiceImpl': Unsatisfied dependency expressed through field 'studentRepository': No qualifying bean of type 'com.event.producer.repo.StudentRepository' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2024-06-24T17:48:51.803+06:00  INFO 22872 --- [producer] [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2024-06-24T17:48:51.826+06:00  INFO 22872 --- [producer] [main] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-06-24T17:48:51.856+06:00 ERROR 22872 --- [producer] [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field studentRepository in com.event.producer.service.StudentRegistrationServiceImpl required a bean of type 'com.event.producer.repo.StudentRepository' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'com.event.producer.repo.StudentRepository' in your configuration.
+
+2024-06-24T17:50:09.673+06:00  INFO 11760 --- [producer] [main] com.event.producer.ProducerApplication   : Starting ProducerApplication using Java 17.0.10 with PID 11760 (D:\PRACTICE\Java\Springboot\kafka\producer\build\classes\java\main started by sharafat.hossain in D:\PRACTICE\Java\Springboot\kafka\producer)
+2024-06-24T17:50:09.677+06:00  INFO 11760 --- [producer] [main] com.event.producer.ProducerApplication   : No active profile set, falling back to 1 default profile: "default"
+2024-06-24T17:50:10.636+06:00  INFO 11760 --- [producer] [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2024-06-24T17:50:10.639+06:00  INFO 11760 --- [producer] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2024-06-24T17:50:10.684+06:00  INFO 11760 --- [producer] [main] .RepositoryConfigurationExtensionSupport : Spring Data MongoDB - Could not safely identify store assignment for repository candidate interface com.event.producer.repo.StudentRepository; If you want this repository to be a MongoDB repository, consider annotating your entities with one of these annotations: org.springframework.data.mongodb.core.mapping.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.mongodb.repository.MongoRepository
+2024-06-24T17:50:10.686+06:00  INFO 11760 --- [producer] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 39 ms. Found 0 MongoDB repository interfaces.
+2024-06-24T17:50:11.441+06:00  INFO 11760 --- [producer] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-06-24T17:50:11.460+06:00  INFO 11760 --- [producer] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-06-24T17:50:11.461+06:00  INFO 11760 --- [producer] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.24]
+2024-06-24T17:50:11.553+06:00  INFO 11760 --- [producer] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-06-24T17:50:11.554+06:00  INFO 11760 --- [producer] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1815 ms
+2024-06-24T17:50:11.653+06:00  WARN 11760 --- [producer] [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'producerController': Unsatisfied dependency expressed through field 'studentRegistrationService': Error creating bean with name 'studentRegistrationServiceImpl': Unsatisfied dependency expressed through field 'studentRepository': No qualifying bean of type 'com.event.producer.repo.StudentRepository' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2024-06-24T17:50:11.659+06:00  INFO 11760 --- [producer] [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2024-06-24T17:50:11.692+06:00  INFO 11760 --- [producer] [main] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-06-24T17:50:11.726+06:00 ERROR 11760 --- [producer] [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field studentRepository in com.event.producer.service.StudentRegistrationServiceImpl required a bean of type 'com.event.producer.repo.StudentRepository' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'com.event.producer.repo.StudentRepository' in your configuration.
+
+2024-06-24T17:51:31.466+06:00  INFO 19760 --- [producer] [main] com.event.producer.ProducerApplication   : Starting ProducerApplication using Java 17.0.10 with PID 19760 (D:\PRACTICE\Java\Springboot\kafka\producer\build\classes\java\main started by sharafat.hossain in D:\PRACTICE\Java\Springboot\kafka\producer)
+2024-06-24T17:51:31.471+06:00  INFO 19760 --- [producer] [main] com.event.producer.ProducerApplication   : No active profile set, falling back to 1 default profile: "default"
+2024-06-24T17:51:32.441+06:00  INFO 19760 --- [producer] [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2024-06-24T17:51:32.443+06:00  INFO 19760 --- [producer] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2024-06-24T17:51:32.534+06:00  INFO 19760 --- [producer] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 82 ms. Found 1 MongoDB repository interface.
+2024-06-24T17:51:33.297+06:00  INFO 19760 --- [producer] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-06-24T17:51:33.316+06:00  INFO 19760 --- [producer] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-06-24T17:51:33.317+06:00  INFO 19760 --- [producer] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.24]
+2024-06-24T17:51:33.406+06:00  INFO 19760 --- [producer] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-06-24T17:51:33.406+06:00  INFO 19760 --- [producer] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1874 ms
+2024-06-24T17:51:33.768+06:00  INFO 19760 --- [producer] [main] org.mongodb.driver.client                : MongoClient with metadata {"driver": {"name": "mongo-java-driver|sync|spring-boot", "version": "5.0.1"}, "os": {"type": "Windows", "name": "Windows 10", "architecture": "amd64", "version": "10.0"}, "platform": "Java/Amazon.com Inc./17.0.10+7-LTS"} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=null, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=MongoCredential{mechanism=null, userName='root', source='admin', password=<hidden>, mechanismProperties=<hidden>}, transportSettings=null, commandListeners=[], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, CollectionCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.client.model.mql.ExpressionCodecProvider@62f11ebb, com.mongodb.Jep395RecordCodecProvider@a6c54c3, com.mongodb.KotlinCodecProvider@580fd26b]}, loggerSettings=LoggerSettings{maxDocumentLength=1000}, clusterSettings={hosts=[localhost:27017], srvServiceName=mongodb, mode=SINGLE, requiredClusterType=UNKNOWN, requiredReplicaSetName='null', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='15 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=false, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=JAVA_LEGACY, serverApi=null, autoEncryptionSettings=null, dnsClient=null, inetAddressResolver=null, contextProvider=null}
+2024-06-24T17:51:33.787+06:00  INFO 19760 --- [producer] [cluster-ClusterId{value='66795dc50973ec1da89e5341', description='null'}-localhost:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=21, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=29954900}
+2024-06-24T17:51:34.460+06:00 DEBUG 19760 --- [producer] [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 3 mappings in 'requestMappingHandlerMapping'
+2024-06-24T17:51:34.577+06:00 DEBUG 19760 --- [producer] [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2024-06-24T17:51:34.628+06:00 DEBUG 19760 --- [producer] [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-06-24T17:51:34.671+06:00 DEBUG 19760 --- [producer] [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-06-24T17:51:34.933+06:00  INFO 19760 --- [producer] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-06-24T17:51:34.946+06:00  INFO 19760 --- [producer] [main] com.event.producer.ProducerApplication   : Started ProducerApplication in 4.118 seconds (process running for 5.032)
+2024-06-24T17:51:43.965+06:00  INFO 19760 --- [producer] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-06-24T17:51:43.966+06:00  INFO 19760 --- [producer] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-06-24T17:51:43.966+06:00 DEBUG 19760 --- [producer] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2024-06-24T17:51:43.966+06:00 DEBUG 19760 --- [producer] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2024-06-24T17:51:43.966+06:00 DEBUG 19760 --- [producer] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2024-06-24T17:51:43.967+06:00 DEBUG 19760 --- [producer] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@33627576
+2024-06-24T17:51:43.970+06:00 DEBUG 19760 --- [producer] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@7f0766ef
+2024-06-24T17:51:43.970+06:00 DEBUG 19760 --- [producer] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2024-06-24T17:51:43.971+06:00  INFO 19760 --- [producer] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 5 ms
+2024-06-24T17:51:43.981+06:00 DEBUG 19760 --- [producer] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : POST "/api/student/register/v1", parameters={}
+2024-06-24T17:51:44.007+06:00 DEBUG 19760 --- [producer] [http-nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.event.producer.controller.ProducerController#create(CreateStudentRequest)
+2024-06-24T17:51:44.143+06:00 DEBUG 19760 --- [producer] [http-nio-8080-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [CreateStudentRequest(firstName=djd, lastName=djdd, email=shddh@gmail.com)]
+2024-06-24T17:51:44.154+06:00  INFO 19760 --- [producer] [http-nio-8080-exec-1] c.e.p.controller.ProducerController      : Get request for student registration. Student Model: CreateStudentRequest(firstName=djd, lastName=djdd, email=shddh@gmail.com)
+2024-06-24T17:51:48.555+06:00 DEBUG 19760 --- [producer] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Failed to complete request: org.springframework.dao.InvalidDataAccessApiUsageException: Cannot autogenerate id of type java.lang.Long for entity of type com.event.producer.entity.Student
+2024-06-24T17:51:48.557+06:00 ERROR 19760 --- [producer] [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.springframework.dao.InvalidDataAccessApiUsageException: Cannot autogenerate id of type java.lang.Long for entity of type com.event.producer.entity.Student] with root cause
+
+org.springframework.dao.InvalidDataAccessApiUsageException: Cannot autogenerate id of type java.lang.Long for entity of type com.event.producer.entity.Student
+	at org.springframework.data.mongodb.core.EntityOperations$MappedEntity.assertUpdateableIdIfNotSet(EntityOperations.java:764) ~[spring-data-mongodb-4.3.0.jar:4.3.0]
+	at org.springframework.data.mongodb.core.MongoTemplate.doInsert(MongoTemplate.java:1330) ~[spring-data-mongodb-4.3.0.jar:4.3.0]
+	at org.springframework.data.mongodb.core.MongoTemplate.insert(MongoTemplate.java:1263) ~[spring-data-mongodb-4.3.0.jar:4.3.0]
+	at org.springframework.data.mongodb.repository.support.SimpleMongoRepository.save(SimpleMongoRepository.java:95) ~[spring-data-mongodb-4.3.0.jar:4.3.0]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:354) ~[spring-aop-6.1.8.jar:6.1.8]
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker$RepositoryFragmentMethodInvoker.lambda$new$0(RepositoryMethodInvoker.java:277) ~[spring-data-commons-3.3.0.jar:3.3.0]
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.doInvoke(RepositoryMethodInvoker.java:170) ~[spring-data-commons-3.3.0.jar:3.3.0]
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.invoke(RepositoryMethodInvoker.java:158) ~[spring-data-commons-3.3.0.jar:3.3.0]
+	at org.springframework.data.repository.core.support.RepositoryComposition$RepositoryFragments.invoke(RepositoryComposition.java:516) ~[spring-data-commons-3.3.0.jar:3.3.0]
+	at org.springframework.data.repository.core.support.RepositoryComposition.invoke(RepositoryComposition.java:285) ~[spring-data-commons-3.3.0.jar:3.3.0]
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$ImplementationMethodExecutionInterceptor.invoke(RepositoryFactorySupport.java:628) ~[spring-data-commons-3.3.0.jar:3.3.0]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.1.8.jar:6.1.8]
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.doInvoke(QueryExecutorMethodInterceptor.java:168) ~[spring-data-commons-3.3.0.jar:3.3.0]
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.invoke(QueryExecutorMethodInterceptor.java:143) ~[spring-data-commons-3.3.0.jar:3.3.0]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.1.8.jar:6.1.8]
+	at org.springframework.data.projection.DefaultMethodInvokingMethodInterceptor.invoke(DefaultMethodInvokingMethodInterceptor.java:70) ~[spring-data-commons-3.3.0.jar:3.3.0]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.1.8.jar:6.1.8]
+	at org.springframework.data.mongodb.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:158) ~[spring-data-mongodb-4.3.0.jar:4.3.0]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.1.8.jar:6.1.8]
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97) ~[spring-aop-6.1.8.jar:6.1.8]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.1.8.jar:6.1.8]
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:223) ~[spring-aop-6.1.8.jar:6.1.8]
+	at jdk.proxy2/jdk.proxy2.$Proxy79.save(Unknown Source) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:354) ~[spring-aop-6.1.8.jar:6.1.8]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196) ~[spring-aop-6.1.8.jar:6.1.8]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-6.1.8.jar:6.1.8]
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137) ~[spring-tx-6.1.8.jar:6.1.8]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.1.8.jar:6.1.8]
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:223) ~[spring-aop-6.1.8.jar:6.1.8]
+	at jdk.proxy2/jdk.proxy2.$Proxy79.save(Unknown Source) ~[na:na]
+	at com.event.producer.service.StudentRegistrationServiceImpl.register(StudentRegistrationServiceImpl.java:28) ~[main/:na]
+	at com.event.producer.controller.ProducerController.create(ProducerController.java:30) ~[main/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:255) ~[spring-web-6.1.8.jar:6.1.8]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:188) ~[spring-web-6.1.8.jar:6.1.8]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.1.8.jar:6.1.8]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:926) ~[spring-webmvc-6.1.8.jar:6.1.8]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:831) ~[spring-webmvc-6.1.8.jar:6.1.8]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.1.8.jar:6.1.8]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089) ~[spring-webmvc-6.1.8.jar:6.1.8]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.1.8.jar:6.1.8]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.1.8.jar:6.1.8]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914) ~[spring-webmvc-6.1.8.jar:6.1.8]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590) ~[tomcat-embed-core-10.1.24.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.1.8.jar:6.1.8]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.24.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.24.jar:10.1.24]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.1.8.jar:6.1.8]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.8.jar:6.1.8]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.1.8.jar:6.1.8]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.8.jar:6.1.8]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.1.8.jar:6.1.8]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.8.jar:6.1.8]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:389) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at java.base/java.lang.Thread.run(Thread.java:840) ~[na:na]
+
+2024-06-24T17:51:48.574+06:00 DEBUG 19760 --- [producer] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for POST "/error", parameters={}
+2024-06-24T17:51:48.576+06:00 DEBUG 19760 --- [producer] [http-nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2024-06-24T17:51:48.598+06:00 DEBUG 19760 --- [producer] [http-nio-8080-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2024-06-24T17:51:48.600+06:00 DEBUG 19760 --- [producer] [http-nio-8080-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Mon Jun 24 17:51:48 ALMT 2024, status=500, error=Internal Server Error, path=/api/student (truncated)...]
+2024-06-24T17:51:48.639+06:00 DEBUG 19760 --- [producer] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 500
+2024-06-24T17:53:41.092+06:00  INFO 22388 --- [producer] [main] com.event.producer.ProducerApplication   : Starting ProducerApplication using Java 17.0.10 with PID 22388 (D:\PRACTICE\Java\Springboot\kafka\producer\build\classes\java\main started by sharafat.hossain in D:\PRACTICE\Java\Springboot\kafka\producer)
+2024-06-24T17:53:41.096+06:00  INFO 22388 --- [producer] [main] com.event.producer.ProducerApplication   : No active profile set, falling back to 1 default profile: "default"
+2024-06-24T17:53:42.009+06:00  INFO 22388 --- [producer] [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2024-06-24T17:53:42.011+06:00  INFO 22388 --- [producer] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2024-06-24T17:53:42.096+06:00  INFO 22388 --- [producer] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 78 ms. Found 1 MongoDB repository interface.
+2024-06-24T17:53:42.830+06:00  INFO 22388 --- [producer] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-06-24T17:53:42.848+06:00  INFO 22388 --- [producer] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-06-24T17:53:42.849+06:00  INFO 22388 --- [producer] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.24]
+2024-06-24T17:53:42.932+06:00  INFO 22388 --- [producer] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-06-24T17:53:42.932+06:00  INFO 22388 --- [producer] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1774 ms
+2024-06-24T17:53:43.259+06:00  INFO 22388 --- [producer] [main] org.mongodb.driver.client                : MongoClient with metadata {"driver": {"name": "mongo-java-driver|sync|spring-boot", "version": "5.0.1"}, "os": {"type": "Windows", "name": "Windows 10", "architecture": "amd64", "version": "10.0"}, "platform": "Java/Amazon.com Inc./17.0.10+7-LTS"} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=null, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=MongoCredential{mechanism=null, userName='root', source='admin', password=<hidden>, mechanismProperties=<hidden>}, transportSettings=null, commandListeners=[], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, CollectionCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.client.model.mql.ExpressionCodecProvider@41fa769c, com.mongodb.Jep395RecordCodecProvider@40113163, com.mongodb.KotlinCodecProvider@71a3e05c]}, loggerSettings=LoggerSettings{maxDocumentLength=1000}, clusterSettings={hosts=[localhost:27017], srvServiceName=mongodb, mode=SINGLE, requiredClusterType=UNKNOWN, requiredReplicaSetName='null', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='15 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=false, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=JAVA_LEGACY, serverApi=null, autoEncryptionSettings=null, dnsClient=null, inetAddressResolver=null, contextProvider=null}
+2024-06-24T17:53:43.273+06:00  INFO 22388 --- [producer] [cluster-ClusterId{value='66795e47687f49737c2c1f57', description='null'}-localhost:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=21, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=27947300}
+2024-06-24T17:53:43.865+06:00 DEBUG 22388 --- [producer] [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 3 mappings in 'requestMappingHandlerMapping'
+2024-06-24T17:53:43.975+06:00 DEBUG 22388 --- [producer] [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2024-06-24T17:53:44.026+06:00 DEBUG 22388 --- [producer] [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-06-24T17:53:44.072+06:00 DEBUG 22388 --- [producer] [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-06-24T17:53:44.319+06:00  INFO 22388 --- [producer] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-06-24T17:53:44.330+06:00  INFO 22388 --- [producer] [main] com.event.producer.ProducerApplication   : Started ProducerApplication in 3.897 seconds (process running for 4.766)
+2024-06-24T17:53:49.383+06:00  INFO 22388 --- [producer] [http-nio-8080-exec-4] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-06-24T17:53:49.383+06:00  INFO 22388 --- [producer] [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-06-24T17:53:49.384+06:00 DEBUG 22388 --- [producer] [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2024-06-24T17:53:49.384+06:00 DEBUG 22388 --- [producer] [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2024-06-24T17:53:49.384+06:00 DEBUG 22388 --- [producer] [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2024-06-24T17:53:49.385+06:00 DEBUG 22388 --- [producer] [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@27bc1d44
+2024-06-24T17:53:49.387+06:00 DEBUG 22388 --- [producer] [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@1e56bc9b
+2024-06-24T17:53:49.388+06:00 DEBUG 22388 --- [producer] [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2024-06-24T17:53:49.389+06:00  INFO 22388 --- [producer] [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Completed initialization in 6 ms
+2024-06-24T17:53:49.398+06:00 DEBUG 22388 --- [producer] [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : POST "/api/student/register/v1", parameters={}
+2024-06-24T17:53:49.410+06:00 DEBUG 22388 --- [producer] [http-nio-8080-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.event.producer.controller.ProducerController#create(CreateStudentRequest)
+2024-06-24T17:53:49.549+06:00 DEBUG 22388 --- [producer] [http-nio-8080-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [CreateStudentRequest(id=1, firstName=djd, lastName=djdd, email=shddh@gmail.com)]
+2024-06-24T17:53:49.562+06:00  INFO 22388 --- [producer] [http-nio-8080-exec-4] c.e.p.controller.ProducerController      : Get request for student registration. Student Model: CreateStudentRequest(id=1, firstName=djd, lastName=djdd, email=shddh@gmail.com)
+2024-06-24T17:53:54.578+06:00 DEBUG 22388 --- [producer] [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Failed to complete request: org.springframework.data.mongodb.UncategorizedMongoDbException: Exception authenticating MongoCredential{mechanism=SCRAM-SHA-1, userName='root', source='admin', password=<hidden>, mechanismProperties=<hidden>}
+2024-06-24T17:53:54.579+06:00 ERROR 22388 --- [producer] [http-nio-8080-exec-4] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.springframework.data.mongodb.UncategorizedMongoDbException: Exception authenticating MongoCredential{mechanism=SCRAM-SHA-1, userName='root', source='admin', password=<hidden>, mechanismProperties=<hidden>}] with root cause
+
+com.mongodb.MongoCommandException: Command failed with error 18 (AuthenticationFailed): 'Authentication failed.' on server localhost:27017. The full response is {"ok": 0.0, "errmsg": "Authentication failed.", "code": 18, "codeName": "AuthenticationFailed"}
+	at com.mongodb.internal.connection.ProtocolHelper.getCommandFailureException(ProtocolHelper.java:205) ~[mongodb-driver-core-5.0.1.jar:na]
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveCommandMessageResponse(InternalStreamConnection.java:431) ~[mongodb-driver-core-5.0.1.jar:na]
+	at com.mongodb.internal.connection.InternalStreamConnection.sendAndReceive(InternalStreamConnection.java:354) ~[mongodb-driver-core-5.0.1.jar:na]
+	at com.mongodb.internal.connection.CommandHelper.sendAndReceive(CommandHelper.java:92) ~[mongodb-driver-core-5.0.1.jar:na]
+	at com.mongodb.internal.connection.CommandHelper.executeCommand(CommandHelper.java:48) ~[mongodb-driver-core-5.0.1.jar:na]
+	at com.mongodb.internal.connection.SaslAuthenticator.sendSaslStart(SaslAuthenticator.java:224) ~[mongodb-driver-core-5.0.1.jar:na]
+	at com.mongodb.internal.connection.SaslAuthenticator.getNextSaslResponse(SaslAuthenticator.java:131) ~[mongodb-driver-core-5.0.1.jar:na]
+	at com.mongodb.internal.connection.SaslAuthenticator.lambda$authenticate$0(SaslAuthenticator.java:63) ~[mongodb-driver-core-5.0.1.jar:na]
+	at com.mongodb.internal.connection.SaslAuthenticator.doAsSubject(SaslAuthenticator.java:277) ~[mongodb-driver-core-5.0.1.jar:na]
+	at com.mongodb.internal.connection.SaslAuthenticator.authenticate(SaslAuthenticator.java:59) ~[mongodb-driver-core-5.0.1.jar:na]
+	at com.mongodb.internal.connection.DefaultAuthenticator.authenticate(DefaultAuthenticator.java:57) ~[mongodb-driver-core-5.0.1.jar:na]
+	at com.mongodb.internal.connection.InternalStreamConnectionInitializer.authenticate(InternalStreamConnectionInitializer.java:206) ~[mongodb-driver-core-5.0.1.jar:na]
+	at com.mongodb.internal.connection.InternalStreamConnectionInitializer.finishHandshake(InternalStreamConnectionInitializer.java:86) ~[mongodb-driver-core-5.0.1.jar:na]
+	at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:206) ~[mongodb-driver-core-5.0.1.jar:na]
+	at com.mongodb.internal.connection.UsageTrackingInternalConnection.open(UsageTrackingInternalConnection.java:55) ~[mongodb-driver-core-5.0.1.jar:na]
+	at com.mongodb.internal.connection.DefaultConnectionPool$PooledConnection.open(DefaultConnectionPool.java:625) ~[mongodb-driver-core-5.0.1.jar:na]
+	at com.mongodb.internal.connection.DefaultConnectionPool$OpenConcurrencyLimiter.openWithConcurrencyLimit(DefaultConnectionPool.java:965) ~[mongodb-driver-core-5.0.1.jar:na]
+	at com.mongodb.internal.connection.DefaultConnectionPool$OpenConcurrencyLimiter.openOrGetAvailable(DefaultConnectionPool.java:906) ~[mongodb-driver-core-5.0.1.jar:na]
+	at com.mongodb.internal.connection.DefaultConnectionPool.get(DefaultConnectionPool.java:203) ~[mongodb-driver-core-5.0.1.jar:na]
+	at com.mongodb.internal.connection.DefaultConnectionPool.get(DefaultConnectionPool.java:192) ~[mongodb-driver-core-5.0.1.jar:na]
+	at com.mongodb.internal.connection.DefaultServer.getConnection(DefaultServer.java:96) ~[mongodb-driver-core-5.0.1.jar:na]
+	at com.mongodb.internal.binding.ClusterBinding$ClusterBindingConnectionSource.getConnection(ClusterBinding.java:178) ~[mongodb-driver-core-5.0.1.jar:na]
+	at com.mongodb.client.internal.ClientSessionBinding$SessionBindingConnectionSource.getConnection(ClientSessionBinding.java:196) ~[mongodb-driver-sync-5.0.1.jar:na]
+	at com.mongodb.internal.operation.SyncOperationHelper.withSuppliedResource(SyncOperationHelper.java:141) ~[mongodb-driver-core-5.0.1.jar:na]
+	at com.mongodb.internal.operation.SyncOperationHelper.lambda$withSourceAndConnection$1(SyncOperationHelper.java:123) ~[mongodb-driver-core-5.0.1.jar:na]
+	at com.mongodb.internal.operation.SyncOperationHelper.withSuppliedResource(SyncOperationHelper.java:149) ~[mongodb-driver-core-5.0.1.jar:na]
+	at com.mongodb.internal.operation.SyncOperationHelper.withSourceAndConnection(SyncOperationHelper.java:122) ~[mongodb-driver-core-5.0.1.jar:na]
+	at com.mongodb.internal.operation.MixedBulkWriteOperation.lambda$execute$3(MixedBulkWriteOperation.java:188) ~[mongodb-driver-core-5.0.1.jar:na]
+	at com.mongodb.internal.operation.MixedBulkWriteOperation.lambda$decorateWriteWithRetries$0(MixedBulkWriteOperation.java:146) ~[mongodb-driver-core-5.0.1.jar:na]
+	at com.mongodb.internal.async.function.RetryingSyncSupplier.get(RetryingSyncSupplier.java:67) ~[mongodb-driver-core-5.0.1.jar:na]
+	at com.mongodb.internal.operation.MixedBulkWriteOperation.execute(MixedBulkWriteOperation.java:207) ~[mongodb-driver-core-5.0.1.jar:na]
+	at com.mongodb.internal.operation.MixedBulkWriteOperation.execute(MixedBulkWriteOperation.java:77) ~[mongodb-driver-core-5.0.1.jar:na]
+	at com.mongodb.client.internal.MongoClientDelegate$DelegateOperationExecutor.execute(MongoClientDelegate.java:173) ~[mongodb-driver-sync-5.0.1.jar:na]
+	at com.mongodb.client.internal.MongoCollectionImpl.executeSingleWriteRequest(MongoCollectionImpl.java:1084) ~[mongodb-driver-sync-5.0.1.jar:na]
+	at com.mongodb.client.internal.MongoCollectionImpl.executeReplaceOne(MongoCollectionImpl.java:574) ~[mongodb-driver-sync-5.0.1.jar:na]
+	at com.mongodb.client.internal.MongoCollectionImpl.replaceOne(MongoCollectionImpl.java:557) ~[mongodb-driver-sync-5.0.1.jar:na]
+	at org.springframework.data.mongodb.core.MongoTemplate.lambda$saveDocument$19(MongoTemplate.java:1619) ~[spring-data-mongodb-4.3.0.jar:4.3.0]
+	at org.springframework.data.mongodb.core.MongoTemplate.execute(MongoTemplate.java:603) ~[spring-data-mongodb-4.3.0.jar:4.3.0]
+	at org.springframework.data.mongodb.core.MongoTemplate.saveDocument(MongoTemplate.java:1585) ~[spring-data-mongodb-4.3.0.jar:4.3.0]
+	at org.springframework.data.mongodb.core.MongoTemplate.doSave(MongoTemplate.java:1517) ~[spring-data-mongodb-4.3.0.jar:4.3.0]
+	at org.springframework.data.mongodb.core.MongoTemplate.save(MongoTemplate.java:1460) ~[spring-data-mongodb-4.3.0.jar:4.3.0]
+	at org.springframework.data.mongodb.repository.support.SimpleMongoRepository.save(SimpleMongoRepository.java:98) ~[spring-data-mongodb-4.3.0.jar:4.3.0]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:354) ~[spring-aop-6.1.8.jar:6.1.8]
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker$RepositoryFragmentMethodInvoker.lambda$new$0(RepositoryMethodInvoker.java:277) ~[spring-data-commons-3.3.0.jar:3.3.0]
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.doInvoke(RepositoryMethodInvoker.java:170) ~[spring-data-commons-3.3.0.jar:3.3.0]
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.invoke(RepositoryMethodInvoker.java:158) ~[spring-data-commons-3.3.0.jar:3.3.0]
+	at org.springframework.data.repository.core.support.RepositoryComposition$RepositoryFragments.invoke(RepositoryComposition.java:516) ~[spring-data-commons-3.3.0.jar:3.3.0]
+	at org.springframework.data.repository.core.support.RepositoryComposition.invoke(RepositoryComposition.java:285) ~[spring-data-commons-3.3.0.jar:3.3.0]
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$ImplementationMethodExecutionInterceptor.invoke(RepositoryFactorySupport.java:628) ~[spring-data-commons-3.3.0.jar:3.3.0]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.1.8.jar:6.1.8]
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.doInvoke(QueryExecutorMethodInterceptor.java:168) ~[spring-data-commons-3.3.0.jar:3.3.0]
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.invoke(QueryExecutorMethodInterceptor.java:143) ~[spring-data-commons-3.3.0.jar:3.3.0]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.1.8.jar:6.1.8]
+	at org.springframework.data.projection.DefaultMethodInvokingMethodInterceptor.invoke(DefaultMethodInvokingMethodInterceptor.java:70) ~[spring-data-commons-3.3.0.jar:3.3.0]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.1.8.jar:6.1.8]
+	at org.springframework.data.mongodb.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:158) ~[spring-data-mongodb-4.3.0.jar:4.3.0]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.1.8.jar:6.1.8]
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97) ~[spring-aop-6.1.8.jar:6.1.8]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.1.8.jar:6.1.8]
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:223) ~[spring-aop-6.1.8.jar:6.1.8]
+	at jdk.proxy2/jdk.proxy2.$Proxy78.save(Unknown Source) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:354) ~[spring-aop-6.1.8.jar:6.1.8]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196) ~[spring-aop-6.1.8.jar:6.1.8]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-6.1.8.jar:6.1.8]
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137) ~[spring-tx-6.1.8.jar:6.1.8]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.1.8.jar:6.1.8]
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:223) ~[spring-aop-6.1.8.jar:6.1.8]
+	at jdk.proxy2/jdk.proxy2.$Proxy78.save(Unknown Source) ~[na:na]
+	at com.event.producer.service.StudentRegistrationServiceImpl.register(StudentRegistrationServiceImpl.java:29) ~[main/:na]
+	at com.event.producer.controller.ProducerController.create(ProducerController.java:30) ~[main/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:255) ~[spring-web-6.1.8.jar:6.1.8]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:188) ~[spring-web-6.1.8.jar:6.1.8]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.1.8.jar:6.1.8]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:926) ~[spring-webmvc-6.1.8.jar:6.1.8]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:831) ~[spring-webmvc-6.1.8.jar:6.1.8]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.1.8.jar:6.1.8]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089) ~[spring-webmvc-6.1.8.jar:6.1.8]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.1.8.jar:6.1.8]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.1.8.jar:6.1.8]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914) ~[spring-webmvc-6.1.8.jar:6.1.8]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590) ~[tomcat-embed-core-10.1.24.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.1.8.jar:6.1.8]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.24.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.24.jar:10.1.24]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.1.8.jar:6.1.8]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.8.jar:6.1.8]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.1.8.jar:6.1.8]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.8.jar:6.1.8]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.1.8.jar:6.1.8]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.8.jar:6.1.8]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:389) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.24.jar:10.1.24]
+	at java.base/java.lang.Thread.run(Thread.java:840) ~[na:na]
+
+2024-06-24T17:53:54.598+06:00 DEBUG 22388 --- [producer] [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for POST "/error", parameters={}
+2024-06-24T17:53:54.601+06:00 DEBUG 22388 --- [producer] [http-nio-8080-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2024-06-24T17:53:54.622+06:00 DEBUG 22388 --- [producer] [http-nio-8080-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2024-06-24T17:53:54.624+06:00 DEBUG 22388 --- [producer] [http-nio-8080-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Mon Jun 24 17:53:54 ALMT 2024, status=500, error=Internal Server Error, path=/api/student (truncated)...]
+2024-06-24T17:53:54.655+06:00 DEBUG 22388 --- [producer] [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 500
+2024-06-24T17:54:04.574+06:00  INFO 22388 --- [producer] [cluster-ClusterId{value='66795e47687f49737c2c1f57', description='null'}-localhost:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=21, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=1609200}
+2024-06-24T17:54:28.214+06:00  INFO 4412 --- [producer] [main] com.event.producer.ProducerApplication   : Starting ProducerApplication using Java 17.0.10 with PID 4412 (D:\PRACTICE\Java\Springboot\kafka\producer\build\classes\java\main started by sharafat.hossain in D:\PRACTICE\Java\Springboot\kafka\producer)
+2024-06-24T17:54:28.218+06:00  INFO 4412 --- [producer] [main] com.event.producer.ProducerApplication   : No active profile set, falling back to 1 default profile: "default"
+2024-06-24T17:54:29.125+06:00  INFO 4412 --- [producer] [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2024-06-24T17:54:29.128+06:00  INFO 4412 --- [producer] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2024-06-24T17:54:29.213+06:00  INFO 4412 --- [producer] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 78 ms. Found 1 MongoDB repository interface.
+2024-06-24T17:54:29.945+06:00  INFO 4412 --- [producer] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-06-24T17:54:29.963+06:00  INFO 4412 --- [producer] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-06-24T17:54:29.963+06:00  INFO 4412 --- [producer] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.24]
+2024-06-24T17:54:30.051+06:00  INFO 4412 --- [producer] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-06-24T17:54:30.052+06:00  INFO 4412 --- [producer] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1776 ms
+2024-06-24T17:54:30.398+06:00  INFO 4412 --- [producer] [main] org.mongodb.driver.client                : MongoClient with metadata {"driver": {"name": "mongo-java-driver|sync|spring-boot", "version": "5.0.1"}, "os": {"type": "Windows", "name": "Windows 10", "architecture": "amd64", "version": "10.0"}, "platform": "Java/Amazon.com Inc./17.0.10+7-LTS"} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=null, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=null, transportSettings=null, commandListeners=[], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, CollectionCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.client.model.mql.ExpressionCodecProvider@77db3d02, com.mongodb.Jep395RecordCodecProvider@78d9f51b, com.mongodb.KotlinCodecProvider@23ed382c]}, loggerSettings=LoggerSettings{maxDocumentLength=1000}, clusterSettings={hosts=[localhost:27017], srvServiceName=mongodb, mode=SINGLE, requiredClusterType=UNKNOWN, requiredReplicaSetName='null', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='15 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=false, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=JAVA_LEGACY, serverApi=null, autoEncryptionSettings=null, dnsClient=null, inetAddressResolver=null, contextProvider=null}
+2024-06-24T17:54:30.413+06:00  INFO 4412 --- [producer] [cluster-ClusterId{value='66795e76aca22c69f7d03329', description='null'}-localhost:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=21, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=25820000}
+2024-06-24T17:54:31.030+06:00 DEBUG 4412 --- [producer] [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 3 mappings in 'requestMappingHandlerMapping'
+2024-06-24T17:54:31.144+06:00 DEBUG 4412 --- [producer] [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2024-06-24T17:54:31.194+06:00 DEBUG 4412 --- [producer] [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-06-24T17:54:31.243+06:00 DEBUG 4412 --- [producer] [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-06-24T17:54:31.509+06:00  INFO 4412 --- [producer] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-06-24T17:54:31.523+06:00  INFO 4412 --- [producer] [main] com.event.producer.ProducerApplication   : Started ProducerApplication in 3.904 seconds (process running for 4.729)
+2024-06-24T17:54:35.856+06:00  INFO 4412 --- [producer] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-06-24T17:54:35.856+06:00  INFO 4412 --- [producer] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-06-24T17:54:35.857+06:00 DEBUG 4412 --- [producer] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2024-06-24T17:54:35.857+06:00 DEBUG 4412 --- [producer] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2024-06-24T17:54:35.857+06:00 DEBUG 4412 --- [producer] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2024-06-24T17:54:35.858+06:00 DEBUG 4412 --- [producer] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@63dda940
+2024-06-24T17:54:35.859+06:00 DEBUG 4412 --- [producer] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@4863c8ac
+2024-06-24T17:54:35.859+06:00 DEBUG 4412 --- [producer] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2024-06-24T17:54:35.859+06:00  INFO 4412 --- [producer] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2024-06-24T17:54:35.874+06:00 DEBUG 4412 --- [producer] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : POST "/api/student/register/v1", parameters={}
+2024-06-24T17:54:35.891+06:00 DEBUG 4412 --- [producer] [http-nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.event.producer.controller.ProducerController#create(CreateStudentRequest)
+2024-06-24T17:54:36.025+06:00 DEBUG 4412 --- [producer] [http-nio-8080-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [CreateStudentRequest(id=1, firstName=djd, lastName=djdd, email=shddh@gmail.com)]
+2024-06-24T17:54:36.036+06:00  INFO 4412 --- [producer] [http-nio-8080-exec-1] c.e.p.controller.ProducerController      : Get request for student registration. Student Model: CreateStudentRequest(id=1, firstName=djd, lastName=djdd, email=shddh@gmail.com)
+2024-06-24T17:54:38.984+06:00 DEBUG 4412 --- [producer] [http-nio-8080-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2024-06-24T17:54:38.986+06:00 DEBUG 4412 --- [producer] [http-nio-8080-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Nothing to write: null body
+2024-06-24T17:54:38.988+06:00 DEBUG 4412 --- [producer] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-06-24T17:57:22.595+06:00  INFO 19592 --- [producer] [main] com.event.producer.ProducerApplication   : Starting ProducerApplication using Java 17.0.10 with PID 19592 (D:\PRACTICE\Java\Springboot\kafka\producer\build\classes\java\main started by sharafat.hossain in D:\PRACTICE\Java\Springboot\kafka\producer)
+2024-06-24T17:57:22.597+06:00  INFO 19592 --- [producer] [main] com.event.producer.ProducerApplication   : No active profile set, falling back to 1 default profile: "default"
+2024-06-24T17:57:23.067+06:00  INFO 19592 --- [producer] [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2024-06-24T17:57:23.068+06:00  INFO 19592 --- [producer] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2024-06-24T17:57:23.105+06:00  INFO 19592 --- [producer] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 34 ms. Found 1 MongoDB repository interface.
+2024-06-24T17:57:23.438+06:00  INFO 19592 --- [producer] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-06-24T17:57:23.447+06:00  INFO 19592 --- [producer] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-06-24T17:57:23.447+06:00  INFO 19592 --- [producer] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.24]
+2024-06-24T17:57:23.508+06:00  INFO 19592 --- [producer] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-06-24T17:57:23.508+06:00  INFO 19592 --- [producer] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 880 ms
+2024-06-24T17:57:23.675+06:00  INFO 19592 --- [producer] [main] org.mongodb.driver.client                : MongoClient with metadata {"driver": {"name": "mongo-java-driver|sync|spring-boot", "version": "5.0.1"}, "os": {"type": "Windows", "name": "Windows 10", "architecture": "amd64", "version": "10.0"}, "platform": "Java/Amazon.com Inc./17.0.10+7-LTS"} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=null, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=null, transportSettings=null, commandListeners=[], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, CollectionCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.client.model.mql.ExpressionCodecProvider@1d02af26, com.mongodb.Jep395RecordCodecProvider@3fa7df1, com.mongodb.KotlinCodecProvider@4dd90166]}, loggerSettings=LoggerSettings{maxDocumentLength=1000}, clusterSettings={hosts=[localhost:27017], srvServiceName=mongodb, mode=SINGLE, requiredClusterType=UNKNOWN, requiredReplicaSetName='null', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='15 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=false, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=JAVA_LEGACY, serverApi=null, autoEncryptionSettings=null, dnsClient=null, inetAddressResolver=null, contextProvider=null}
+2024-06-24T17:57:23.684+06:00  INFO 19592 --- [producer] [cluster-ClusterId{value='66795f232b39334a4bc61abd', description='null'}-localhost:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=21, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=20059400}
+2024-06-24T17:57:23.956+06:00 DEBUG 19592 --- [producer] [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 3 mappings in 'requestMappingHandlerMapping'
+2024-06-24T17:57:24.008+06:00 DEBUG 19592 --- [producer] [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2024-06-24T17:57:24.028+06:00 DEBUG 19592 --- [producer] [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-06-24T17:57:24.055+06:00 DEBUG 19592 --- [producer] [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-06-24T17:57:24.167+06:00  INFO 19592 --- [producer] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-06-24T17:57:24.177+06:00  INFO 19592 --- [producer] [main] com.event.producer.ProducerApplication   : Started ProducerApplication in 1.892 seconds (process running for 2.283)
+2024-06-24T17:57:27.535+06:00  INFO 19592 --- [producer] [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-06-24T17:57:27.535+06:00  INFO 19592 --- [producer] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-06-24T17:57:27.536+06:00 DEBUG 19592 --- [producer] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2024-06-24T17:57:27.537+06:00 DEBUG 19592 --- [producer] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2024-06-24T17:57:27.537+06:00 DEBUG 19592 --- [producer] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2024-06-24T17:57:27.537+06:00 DEBUG 19592 --- [producer] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@1e734eee
+2024-06-24T17:57:27.538+06:00 DEBUG 19592 --- [producer] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@2017f6e6
+2024-06-24T17:57:27.538+06:00 DEBUG 19592 --- [producer] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2024-06-24T17:57:27.538+06:00  INFO 19592 --- [producer] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2024-06-24T17:57:27.544+06:00 DEBUG 19592 --- [producer] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : POST "/api/student/register/v1", parameters={}
+2024-06-24T17:57:27.550+06:00 DEBUG 19592 --- [producer] [http-nio-8080-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.event.producer.controller.ProducerController#create(CreateStudentRequest)
+2024-06-24T17:57:27.612+06:00 DEBUG 19592 --- [producer] [http-nio-8080-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [CreateStudentRequest(id=1, firstName=djd, lastName=djdd, email=shddh@gmail.com)]
+2024-06-24T17:57:27.617+06:00  INFO 19592 --- [producer] [http-nio-8080-exec-2] c.e.p.controller.ProducerController      : Get request for student registration. Student Model: CreateStudentRequest(id=1, firstName=djd, lastName=djdd, email=shddh@gmail.com)
+2024-06-24T17:57:27.696+06:00 DEBUG 19592 --- [producer] [http-nio-8080-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2024-06-24T17:57:27.697+06:00 DEBUG 19592 --- [producer] [http-nio-8080-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Nothing to write: null body
+2024-06-24T17:57:27.698+06:00 DEBUG 19592 --- [producer] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-06-24T17:58:21.695+06:00 DEBUG 19592 --- [producer] [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : POST "/api/student/register/v1", parameters={}
+2024-06-24T17:58:21.695+06:00 DEBUG 19592 --- [producer] [http-nio-8080-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.event.producer.controller.ProducerController#create(CreateStudentRequest)
+2024-06-24T17:58:21.697+06:00 DEBUG 19592 --- [producer] [http-nio-8080-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [CreateStudentRequest(id=1, firstName=djd, lastName=djdd, email=shddh@gmail.com)]
+2024-06-24T17:58:21.698+06:00  INFO 19592 --- [producer] [http-nio-8080-exec-4] c.e.p.controller.ProducerController      : Get request for student registration. Student Model: CreateStudentRequest(id=1, firstName=djd, lastName=djdd, email=shddh@gmail.com)
+2024-06-24T17:58:21.700+06:00 DEBUG 19592 --- [producer] [http-nio-8080-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2024-06-24T17:58:21.700+06:00 DEBUG 19592 --- [producer] [http-nio-8080-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Nothing to write: null body
+2024-06-24T17:58:21.700+06:00 DEBUG 19592 --- [producer] [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-06-24T17:58:32.112+06:00  INFO 17052 --- [producer] [main] com.event.producer.ProducerApplication   : Starting ProducerApplication using Java 17.0.10 with PID 17052 (D:\PRACTICE\Java\Springboot\kafka\producer\build\classes\java\main started by sharafat.hossain in D:\PRACTICE\Java\Springboot\kafka\producer)
+2024-06-24T17:58:32.114+06:00  INFO 17052 --- [producer] [main] com.event.producer.ProducerApplication   : No active profile set, falling back to 1 default profile: "default"
+2024-06-24T17:58:32.566+06:00  INFO 17052 --- [producer] [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2024-06-24T17:58:32.568+06:00  INFO 17052 --- [producer] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2024-06-24T17:58:32.608+06:00  INFO 17052 --- [producer] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 37 ms. Found 1 MongoDB repository interface.
+2024-06-24T17:58:32.944+06:00  INFO 17052 --- [producer] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-06-24T17:58:32.953+06:00  INFO 17052 --- [producer] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-06-24T17:58:32.953+06:00  INFO 17052 --- [producer] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.24]
+2024-06-24T17:58:33.016+06:00  INFO 17052 --- [producer] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-06-24T17:58:33.017+06:00  INFO 17052 --- [producer] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 871 ms
+2024-06-24T17:58:33.176+06:00  INFO 17052 --- [producer] [main] org.mongodb.driver.client                : MongoClient with metadata {"driver": {"name": "mongo-java-driver|sync|spring-boot", "version": "5.0.1"}, "os": {"type": "Windows", "name": "Windows 10", "architecture": "amd64", "version": "10.0"}, "platform": "Java/Amazon.com Inc./17.0.10+7-LTS"} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=null, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=null, transportSettings=null, commandListeners=[], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, CollectionCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.client.model.mql.ExpressionCodecProvider@781711b7, com.mongodb.Jep395RecordCodecProvider@642a16aa, com.mongodb.KotlinCodecProvider@642ee49c]}, loggerSettings=LoggerSettings{maxDocumentLength=1000}, clusterSettings={hosts=[localhost:27017], srvServiceName=mongodb, mode=SINGLE, requiredClusterType=UNKNOWN, requiredReplicaSetName='null', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='15 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=false, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=JAVA_LEGACY, serverApi=null, autoEncryptionSettings=null, dnsClient=null, inetAddressResolver=null, contextProvider=null}
+2024-06-24T17:58:33.184+06:00  INFO 17052 --- [producer] [cluster-ClusterId{value='66795f69d738ef3608a1a667', description='null'}-localhost:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=21, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=18264500}
+2024-06-24T17:58:33.453+06:00 DEBUG 17052 --- [producer] [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 3 mappings in 'requestMappingHandlerMapping'
+2024-06-24T17:58:33.503+06:00 DEBUG 17052 --- [producer] [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2024-06-24T17:58:33.526+06:00 DEBUG 17052 --- [producer] [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-06-24T17:58:33.555+06:00 DEBUG 17052 --- [producer] [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-06-24T17:58:33.673+06:00  INFO 17052 --- [producer] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-06-24T17:58:33.682+06:00  INFO 17052 --- [producer] [main] com.event.producer.ProducerApplication   : Started ProducerApplication in 1.873 seconds (process running for 2.28)
+2024-06-24T17:58:37.992+06:00  INFO 17052 --- [producer] [http-nio-8080-exec-3] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-06-24T17:58:37.993+06:00  INFO 17052 --- [producer] [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-06-24T17:58:37.993+06:00 DEBUG 17052 --- [producer] [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2024-06-24T17:58:37.993+06:00 DEBUG 17052 --- [producer] [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2024-06-24T17:58:37.993+06:00 DEBUG 17052 --- [producer] [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2024-06-24T17:58:37.994+06:00 DEBUG 17052 --- [producer] [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@32e5af53
+2024-06-24T17:58:37.995+06:00 DEBUG 17052 --- [producer] [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@1c3b6963
+2024-06-24T17:58:37.997+06:00 DEBUG 17052 --- [producer] [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2024-06-24T17:58:37.998+06:00  INFO 17052 --- [producer] [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
+2024-06-24T17:58:38.009+06:00 DEBUG 17052 --- [producer] [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : POST "/api/student/register/v1", parameters={}
+2024-06-24T17:58:38.025+06:00 DEBUG 17052 --- [producer] [http-nio-8080-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.event.producer.controller.ProducerController#create(CreateStudentRequest)
+2024-06-24T17:58:38.137+06:00 DEBUG 17052 --- [producer] [http-nio-8080-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [CreateStudentRequest(id=1, firstName=djd, lastName=djdd, email=shddh@gmail.com)]
+2024-06-24T17:58:38.149+06:00  INFO 17052 --- [producer] [http-nio-8080-exec-3] c.e.p.controller.ProducerController      : Get request for student registration. Student Model: CreateStudentRequest(id=1, firstName=djd, lastName=djdd, email=shddh@gmail.com)
+2024-06-24T17:58:38.321+06:00 DEBUG 17052 --- [producer] [http-nio-8080-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2024-06-24T17:58:38.322+06:00 DEBUG 17052 --- [producer] [http-nio-8080-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Nothing to write: null body
+2024-06-24T17:58:38.323+06:00 DEBUG 17052 --- [producer] [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-06-24T18:01:24.701+06:00  INFO 15788 --- [producer] [main] com.event.producer.ProducerApplication   : Starting ProducerApplication using Java 17.0.10 with PID 15788 (D:\PRACTICE\Java\Springboot\kafka\producer\build\classes\java\main started by sharafat.hossain in D:\PRACTICE\Java\Springboot\kafka\producer)
+2024-06-24T18:01:24.705+06:00  INFO 15788 --- [producer] [main] com.event.producer.ProducerApplication   : No active profile set, falling back to 1 default profile: "default"
+2024-06-24T18:01:25.619+06:00  INFO 15788 --- [producer] [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2024-06-24T18:01:25.623+06:00  INFO 15788 --- [producer] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2024-06-24T18:01:25.708+06:00  INFO 15788 --- [producer] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 78 ms. Found 1 MongoDB repository interface.
+2024-06-24T18:01:26.444+06:00  INFO 15788 --- [producer] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-06-24T18:01:26.463+06:00  INFO 15788 --- [producer] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-06-24T18:01:26.464+06:00  INFO 15788 --- [producer] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.24]
+2024-06-24T18:01:26.556+06:00  INFO 15788 --- [producer] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-06-24T18:01:26.556+06:00  INFO 15788 --- [producer] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1792 ms
+2024-06-24T18:01:26.880+06:00  INFO 15788 --- [producer] [main] org.mongodb.driver.client                : MongoClient with metadata {"driver": {"name": "mongo-java-driver|sync|spring-boot", "version": "5.0.1"}, "os": {"type": "Windows", "name": "Windows 10", "architecture": "amd64", "version": "10.0"}, "platform": "Java/Amazon.com Inc./17.0.10+7-LTS"} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=null, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=null, transportSettings=null, commandListeners=[], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, CollectionCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.client.model.mql.ExpressionCodecProvider@77db3d02, com.mongodb.Jep395RecordCodecProvider@78d9f51b, com.mongodb.KotlinCodecProvider@23ed382c]}, loggerSettings=LoggerSettings{maxDocumentLength=1000}, clusterSettings={hosts=[localhost:27017], srvServiceName=mongodb, mode=SINGLE, requiredClusterType=UNKNOWN, requiredReplicaSetName='null', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='15 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=false, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=JAVA_LEGACY, serverApi=null, autoEncryptionSettings=null, dnsClient=null, inetAddressResolver=null, contextProvider=null}
+2024-06-24T18:01:26.895+06:00  INFO 15788 --- [producer] [cluster-ClusterId{value='667960163204ee7d263672ad', description='null'}-localhost:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=21, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=26393100}
+2024-06-24T18:01:27.514+06:00 DEBUG 15788 --- [producer] [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 3 mappings in 'requestMappingHandlerMapping'
+2024-06-24T18:01:27.627+06:00 DEBUG 15788 --- [producer] [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2024-06-24T18:01:27.672+06:00 DEBUG 15788 --- [producer] [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-06-24T18:01:27.717+06:00 DEBUG 15788 --- [producer] [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-06-24T18:01:27.966+06:00  INFO 15788 --- [producer] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-06-24T18:01:27.981+06:00  INFO 15788 --- [producer] [main] com.event.producer.ProducerApplication   : Started ProducerApplication in 3.878 seconds (process running for 4.714)
+2024-06-24T18:01:34.925+06:00  INFO 15788 --- [producer] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-06-24T18:01:34.925+06:00  INFO 15788 --- [producer] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-06-24T18:01:34.925+06:00 DEBUG 15788 --- [producer] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2024-06-24T18:01:34.925+06:00 DEBUG 15788 --- [producer] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2024-06-24T18:01:34.925+06:00 DEBUG 15788 --- [producer] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2024-06-24T18:01:34.926+06:00 DEBUG 15788 --- [producer] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@63dda940
+2024-06-24T18:01:34.927+06:00 DEBUG 15788 --- [producer] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@4863c8ac
+2024-06-24T18:01:34.928+06:00 DEBUG 15788 --- [producer] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2024-06-24T18:01:34.929+06:00  INFO 15788 --- [producer] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
+2024-06-24T18:01:34.944+06:00 DEBUG 15788 --- [producer] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : POST "/api/student/register/v1", parameters={}
+2024-06-24T18:01:34.963+06:00 DEBUG 15788 --- [producer] [http-nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.event.producer.controller.ProducerController#create(CreateStudentRequest)
+2024-06-24T18:01:35.106+06:00 DEBUG 15788 --- [producer] [http-nio-8080-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [CreateStudentRequest(id=1, firstName=djd, lastName=djdd, email=shddh@gmail.com)]
+2024-06-24T18:01:35.120+06:00  INFO 15788 --- [producer] [http-nio-8080-exec-1] c.e.p.controller.ProducerController      : Get request for student registration. Student Model: CreateStudentRequest(id=1, firstName=djd, lastName=djdd, email=shddh@gmail.com)
+2024-06-24T18:02:05.082+06:00 DEBUG 15788 --- [producer] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Failed to complete request: org.springframework.data.mongodb.ClientSessionException: state should be: open
+2024-06-24T18:04:02.826+06:00  INFO 14592 --- [producer] [main] com.event.producer.ProducerApplication   : Starting ProducerApplication using Java 17.0.10 with PID 14592 (D:\PRACTICE\Java\Springboot\kafka\producer\build\classes\java\main started by sharafat.hossain in D:\PRACTICE\Java\Springboot\kafka\producer)
+2024-06-24T18:04:02.829+06:00  INFO 14592 --- [producer] [main] com.event.producer.ProducerApplication   : No active profile set, falling back to 1 default profile: "default"
+2024-06-24T18:04:03.796+06:00  INFO 14592 --- [producer] [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2024-06-24T18:04:03.799+06:00  INFO 14592 --- [producer] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2024-06-24T18:04:03.886+06:00  INFO 14592 --- [producer] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 79 ms. Found 1 MongoDB repository interface.
+2024-06-24T18:04:04.635+06:00  INFO 14592 --- [producer] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-06-24T18:04:04.653+06:00  INFO 14592 --- [producer] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-06-24T18:04:04.655+06:00  INFO 14592 --- [producer] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.24]
+2024-06-24T18:04:04.746+06:00  INFO 14592 --- [producer] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-06-24T18:04:04.746+06:00  INFO 14592 --- [producer] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1853 ms
+2024-06-24T18:04:05.113+06:00  INFO 14592 --- [producer] [main] org.mongodb.driver.client                : MongoClient with metadata {"driver": {"name": "mongo-java-driver|sync|spring-boot", "version": "5.0.1"}, "os": {"type": "Windows", "name": "Windows 10", "architecture": "amd64", "version": "10.0"}, "platform": "Java/Amazon.com Inc./17.0.10+7-LTS"} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=null, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=null, transportSettings=null, commandListeners=[], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, CollectionCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.client.model.mql.ExpressionCodecProvider@20580d4e, com.mongodb.Jep395RecordCodecProvider@21bd128b, com.mongodb.KotlinCodecProvider@2d0b05]}, loggerSettings=LoggerSettings{maxDocumentLength=1000}, clusterSettings={hosts=[localhost:27017], srvServiceName=mongodb, mode=SINGLE, requiredClusterType=UNKNOWN, requiredReplicaSetName='null', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='15 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=false, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=JAVA_LEGACY, serverApi=null, autoEncryptionSettings=null, dnsClient=null, inetAddressResolver=null, contextProvider=null}
+2024-06-24T18:04:05.130+06:00  INFO 14592 --- [producer] [cluster-ClusterId{value='667960b58e177568f326b3e2', description='null'}-localhost:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=21, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=28696100}
+2024-06-24T18:04:05.767+06:00 DEBUG 14592 --- [producer] [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 3 mappings in 'requestMappingHandlerMapping'
+2024-06-24T18:04:05.893+06:00 DEBUG 14592 --- [producer] [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2024-06-24T18:04:05.946+06:00 DEBUG 14592 --- [producer] [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-06-24T18:04:05.995+06:00 DEBUG 14592 --- [producer] [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-06-24T18:04:06.244+06:00  INFO 14592 --- [producer] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-06-24T18:04:06.257+06:00  INFO 14592 --- [producer] [main] com.event.producer.ProducerApplication   : Started ProducerApplication in 4.082 seconds (process running for 5.026)
+2024-06-24T18:04:11.226+06:00  INFO 14592 --- [producer] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-06-24T18:04:11.226+06:00  INFO 14592 --- [producer] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-06-24T18:04:11.227+06:00 DEBUG 14592 --- [producer] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2024-06-24T18:04:11.227+06:00 DEBUG 14592 --- [producer] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2024-06-24T18:04:11.227+06:00 DEBUG 14592 --- [producer] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2024-06-24T18:04:11.228+06:00 DEBUG 14592 --- [producer] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@7de35070
+2024-06-24T18:04:11.228+06:00 DEBUG 14592 --- [producer] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@2ce524d2
+2024-06-24T18:04:11.229+06:00 DEBUG 14592 --- [producer] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2024-06-24T18:04:11.229+06:00  INFO 14592 --- [producer] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2024-06-24T18:04:11.245+06:00 DEBUG 14592 --- [producer] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : POST "/api/student/register/v1", parameters={}
+2024-06-24T18:04:11.263+06:00 DEBUG 14592 --- [producer] [http-nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.event.producer.controller.ProducerController#create(CreateStudentRequest)
+2024-06-24T18:04:11.401+06:00 DEBUG 14592 --- [producer] [http-nio-8080-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [CreateStudentRequest(id=1, firstName=djd, lastName=djdd, email=shddh@gmail.com)]
+2024-06-24T18:04:11.411+06:00  INFO 14592 --- [producer] [http-nio-8080-exec-1] c.e.p.controller.ProducerController      : Get request for student registration. Student Model: CreateStudentRequest(id=1, firstName=djd, lastName=djdd, email=shddh@gmail.com)
+2024-06-24T18:04:18.841+06:00 DEBUG 14592 --- [producer] [http-nio-8080-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2024-06-24T18:04:18.842+06:00 DEBUG 14592 --- [producer] [http-nio-8080-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Nothing to write: null body
+2024-06-24T18:04:18.844+06:00 DEBUG 14592 --- [producer] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-06-24T18:05:26.613+06:00  INFO 21108 --- [producer] [main] com.event.producer.ProducerApplication   : Starting ProducerApplication using Java 17.0.10 with PID 21108 (D:\PRACTICE\Java\Springboot\kafka\producer\build\classes\java\main started by sharafat.hossain in D:\PRACTICE\Java\Springboot\kafka\producer)
+2024-06-24T18:05:26.617+06:00  INFO 21108 --- [producer] [main] com.event.producer.ProducerApplication   : No active profile set, falling back to 1 default profile: "default"
+2024-06-24T18:05:27.567+06:00  INFO 21108 --- [producer] [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2024-06-24T18:05:27.570+06:00  INFO 21108 --- [producer] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2024-06-24T18:05:27.655+06:00  INFO 21108 --- [producer] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 76 ms. Found 1 MongoDB repository interface.
+2024-06-24T18:05:28.441+06:00  INFO 21108 --- [producer] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-06-24T18:05:28.460+06:00  INFO 21108 --- [producer] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-06-24T18:05:28.461+06:00  INFO 21108 --- [producer] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.24]
+2024-06-24T18:05:28.555+06:00  INFO 21108 --- [producer] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-06-24T18:05:28.557+06:00  INFO 21108 --- [producer] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1875 ms
+2024-06-24T18:05:28.891+06:00  INFO 21108 --- [producer] [main] org.mongodb.driver.client                : MongoClient with metadata {"driver": {"name": "mongo-java-driver|sync|spring-boot", "version": "5.0.1"}, "os": {"type": "Windows", "name": "Windows 10", "architecture": "amd64", "version": "10.0"}, "platform": "Java/Amazon.com Inc./17.0.10+7-LTS"} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=null, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=null, transportSettings=null, commandListeners=[], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, CollectionCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.client.model.mql.ExpressionCodecProvider@4087c7fc, com.mongodb.Jep395RecordCodecProvider@318c68d5, com.mongodb.KotlinCodecProvider@4cfa83f9]}, loggerSettings=LoggerSettings{maxDocumentLength=1000}, clusterSettings={hosts=[localhost:27017], srvServiceName=mongodb, mode=SINGLE, requiredClusterType=UNKNOWN, requiredReplicaSetName='null', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='15 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=false, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=JAVA_LEGACY, serverApi=null, autoEncryptionSettings=null, dnsClient=null, inetAddressResolver=null, contextProvider=null}
+2024-06-24T18:05:28.907+06:00  INFO 21108 --- [producer] [cluster-ClusterId{value='66796108a9d41f08a2645d6e', description='null'}-localhost:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=21, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=27289800}
+2024-06-24T18:05:29.504+06:00 DEBUG 21108 --- [producer] [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 3 mappings in 'requestMappingHandlerMapping'
+2024-06-24T18:05:29.624+06:00 DEBUG 21108 --- [producer] [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2024-06-24T18:05:29.680+06:00 DEBUG 21108 --- [producer] [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-06-24T18:05:29.736+06:00 DEBUG 21108 --- [producer] [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-06-24T18:05:30.002+06:00  INFO 21108 --- [producer] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-06-24T18:05:30.015+06:00  INFO 21108 --- [producer] [main] com.event.producer.ProducerApplication   : Started ProducerApplication in 4.065 seconds (process running for 4.889)
+2024-06-24T18:05:35.659+06:00  INFO 21108 --- [producer] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-06-24T18:05:35.659+06:00  INFO 21108 --- [producer] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-06-24T18:05:35.660+06:00 DEBUG 21108 --- [producer] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2024-06-24T18:05:35.660+06:00 DEBUG 21108 --- [producer] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2024-06-24T18:05:35.660+06:00 DEBUG 21108 --- [producer] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2024-06-24T18:05:35.662+06:00 DEBUG 21108 --- [producer] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@19d53ab4
+2024-06-24T18:05:35.663+06:00 DEBUG 21108 --- [producer] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@99a8de3
+2024-06-24T18:05:35.663+06:00 DEBUG 21108 --- [producer] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2024-06-24T18:05:35.663+06:00  INFO 21108 --- [producer] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
+2024-06-24T18:05:35.677+06:00 DEBUG 21108 --- [producer] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : POST "/api/student/register/v1", parameters={}
+2024-06-24T18:05:35.694+06:00 DEBUG 21108 --- [producer] [http-nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.event.producer.controller.ProducerController#create(CreateStudentRequest)
+2024-06-24T18:05:35.828+06:00 DEBUG 21108 --- [producer] [http-nio-8080-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [CreateStudentRequest(id=1, firstName=djd, lastName=djdd, email=shddh@gmail.com)]
+2024-06-24T18:05:35.838+06:00  INFO 21108 --- [producer] [http-nio-8080-exec-1] c.e.p.controller.ProducerController      : Get request for student registration. Student Model: CreateStudentRequest(id=1, firstName=djd, lastName=djdd, email=shddh@gmail.com)
+2024-06-24T18:05:39.092+06:00 DEBUG 21108 --- [producer] [http-nio-8080-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2024-06-24T18:05:39.093+06:00 DEBUG 21108 --- [producer] [http-nio-8080-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Nothing to write: null body
+2024-06-24T18:05:39.095+06:00 DEBUG 21108 --- [producer] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-06-24T18:07:04.281+06:00  INFO 3504 --- [producer] [main] com.event.producer.ProducerApplication   : Starting ProducerApplication using Java 17.0.10 with PID 3504 (D:\PRACTICE\Java\Springboot\kafka\producer\build\classes\java\main started by sharafat.hossain in D:\PRACTICE\Java\Springboot\kafka\producer)
+2024-06-24T18:07:04.283+06:00  INFO 3504 --- [producer] [main] com.event.producer.ProducerApplication   : No active profile set, falling back to 1 default profile: "default"
+2024-06-24T18:07:04.783+06:00  INFO 3504 --- [producer] [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2024-06-24T18:07:04.784+06:00  INFO 3504 --- [producer] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2024-06-24T18:07:04.824+06:00  INFO 3504 --- [producer] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 36 ms. Found 1 MongoDB repository interface.
+2024-06-24T18:07:05.191+06:00  INFO 3504 --- [producer] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-06-24T18:07:05.199+06:00  INFO 3504 --- [producer] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-06-24T18:07:05.200+06:00  INFO 3504 --- [producer] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.24]
+2024-06-24T18:07:05.246+06:00  INFO 3504 --- [producer] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-06-24T18:07:05.246+06:00  INFO 3504 --- [producer] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 930 ms
+2024-06-24T18:07:05.416+06:00  INFO 3504 --- [producer] [main] org.mongodb.driver.client                : MongoClient with metadata {"driver": {"name": "mongo-java-driver|sync|spring-boot", "version": "5.0.1"}, "os": {"type": "Windows", "name": "Windows 10", "architecture": "amd64", "version": "10.0"}, "platform": "Java/Amazon.com Inc./17.0.10+7-LTS"} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=null, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=null, transportSettings=null, commandListeners=[], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, CollectionCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.client.model.mql.ExpressionCodecProvider@1ec22831, com.mongodb.Jep395RecordCodecProvider@63f855b, com.mongodb.KotlinCodecProvider@516592b1]}, loggerSettings=LoggerSettings{maxDocumentLength=1000}, clusterSettings={hosts=[localhost:27017], srvServiceName=mongodb, mode=SINGLE, requiredClusterType=UNKNOWN, requiredReplicaSetName='null', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='15 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=false, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=JAVA_LEGACY, serverApi=null, autoEncryptionSettings=null, dnsClient=null, inetAddressResolver=null, contextProvider=null}
+2024-06-24T18:07:05.428+06:00  INFO 3504 --- [producer] [cluster-ClusterId{value='66796169ee6ad424fd724c19', description='null'}-localhost:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=21, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=22148100}
+2024-06-24T18:07:05.730+06:00 DEBUG 3504 --- [producer] [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 3 mappings in 'requestMappingHandlerMapping'
+2024-06-24T18:07:05.792+06:00 DEBUG 3504 --- [producer] [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2024-06-24T18:07:05.815+06:00 DEBUG 3504 --- [producer] [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-06-24T18:07:05.838+06:00 DEBUG 3504 --- [producer] [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-06-24T18:07:05.968+06:00  INFO 3504 --- [producer] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-06-24T18:07:05.976+06:00  INFO 3504 --- [producer] [main] com.event.producer.ProducerApplication   : Started ProducerApplication in 2.027 seconds (process running for 2.529)
+2024-06-24T18:08:39.186+06:00  INFO 13064 --- [producer] [main] com.event.producer.ProducerApplication   : Starting ProducerApplication using Java 17.0.10 with PID 13064 (D:\PRACTICE\Java\Springboot\kafka\producer\build\classes\java\main started by sharafat.hossain in D:\PRACTICE\Java\Springboot\kafka\producer)
+2024-06-24T18:08:39.188+06:00  INFO 13064 --- [producer] [main] com.event.producer.ProducerApplication   : No active profile set, falling back to 1 default profile: "default"
+2024-06-24T18:08:39.699+06:00  INFO 13064 --- [producer] [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2024-06-24T18:08:39.701+06:00  INFO 13064 --- [producer] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2024-06-24T18:08:39.741+06:00  INFO 13064 --- [producer] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 37 ms. Found 1 MongoDB repository interface.
+2024-06-24T18:08:40.143+06:00  INFO 13064 --- [producer] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-06-24T18:08:40.152+06:00  INFO 13064 --- [producer] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-06-24T18:08:40.152+06:00  INFO 13064 --- [producer] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.24]
+2024-06-24T18:08:40.200+06:00  INFO 13064 --- [producer] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-06-24T18:08:40.201+06:00  INFO 13064 --- [producer] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 975 ms
+2024-06-24T18:08:40.379+06:00  INFO 13064 --- [producer] [main] org.mongodb.driver.client                : MongoClient with metadata {"driver": {"name": "mongo-java-driver|sync|spring-boot", "version": "5.0.1"}, "os": {"type": "Windows", "name": "Windows 10", "architecture": "amd64", "version": "10.0"}, "platform": "Java/Amazon.com Inc./17.0.10+7-LTS"} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=null, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=null, transportSettings=null, commandListeners=[], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, CollectionCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.client.model.mql.ExpressionCodecProvider@63f855b, com.mongodb.Jep395RecordCodecProvider@516592b1, com.mongodb.KotlinCodecProvider@4cffcc61]}, loggerSettings=LoggerSettings{maxDocumentLength=1000}, clusterSettings={hosts=[localhost:27017], srvServiceName=mongodb, mode=SINGLE, requiredClusterType=UNKNOWN, requiredReplicaSetName='null', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='15 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=false, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=JAVA_LEGACY, serverApi=null, autoEncryptionSettings=null, dnsClient=null, inetAddressResolver=null, contextProvider=null}
+2024-06-24T18:08:40.395+06:00  INFO 13064 --- [producer] [cluster-ClusterId{value='667961c8d9e52f1c9f3efdbe', description='null'}-localhost:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=21, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=27318800}
+2024-06-24T18:08:40.706+06:00 DEBUG 13064 --- [producer] [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 3 mappings in 'requestMappingHandlerMapping'
+2024-06-24T18:08:40.776+06:00 DEBUG 13064 --- [producer] [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2024-06-24T18:08:40.799+06:00 DEBUG 13064 --- [producer] [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-06-24T18:08:40.823+06:00 DEBUG 13064 --- [producer] [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-06-24T18:08:40.959+06:00  INFO 13064 --- [producer] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-06-24T18:08:40.967+06:00  INFO 13064 --- [producer] [main] com.event.producer.ProducerApplication   : Started ProducerApplication in 2.121 seconds (process running for 2.663)
+2024-06-24T18:08:43.364+06:00  INFO 13064 --- [producer] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-06-24T18:08:43.364+06:00  INFO 13064 --- [producer] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-06-24T18:08:43.364+06:00 DEBUG 13064 --- [producer] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2024-06-24T18:08:43.364+06:00 DEBUG 13064 --- [producer] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2024-06-24T18:08:43.365+06:00 DEBUG 13064 --- [producer] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2024-06-24T18:08:43.365+06:00 DEBUG 13064 --- [producer] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@7a55fb81
+2024-06-24T18:08:43.365+06:00 DEBUG 13064 --- [producer] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@403364e9
+2024-06-24T18:08:43.366+06:00 DEBUG 13064 --- [producer] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2024-06-24T18:08:43.366+06:00  INFO 13064 --- [producer] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2024-06-24T18:08:43.373+06:00 DEBUG 13064 --- [producer] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : POST "/api/student/register/v1", parameters={}
+2024-06-24T18:08:43.380+06:00 DEBUG 13064 --- [producer] [http-nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.event.producer.controller.ProducerController#create(CreateStudentRequest)
+2024-06-24T18:08:43.448+06:00 DEBUG 13064 --- [producer] [http-nio-8080-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [CreateStudentRequest(id=1, firstName=djd, lastName=djdd, email=shddh@gmail.com)]
+2024-06-24T18:08:43.455+06:00  INFO 13064 --- [producer] [http-nio-8080-exec-1] c.e.p.controller.ProducerController      : Get request for student registration. Student Model: CreateStudentRequest(id=1, firstName=djd, lastName=djdd, email=shddh@gmail.com)
+2024-06-24T18:08:46.107+06:00 DEBUG 13064 --- [producer] [http-nio-8080-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2024-06-24T18:08:46.108+06:00 DEBUG 13064 --- [producer] [http-nio-8080-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Nothing to write: null body
+2024-06-24T18:08:46.109+06:00 DEBUG 13064 --- [producer] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-06-24T18:09:58.286+06:00  INFO 25756 --- [producer] [main] com.event.producer.ProducerApplication   : Starting ProducerApplication using Java 17.0.10 with PID 25756 (D:\PRACTICE\Java\Springboot\kafka\producer\build\classes\java\main started by sharafat.hossain in D:\PRACTICE\Java\Springboot\kafka\producer)
+2024-06-24T18:09:58.288+06:00  INFO 25756 --- [producer] [main] com.event.producer.ProducerApplication   : No active profile set, falling back to 1 default profile: "default"
+2024-06-24T18:09:59.167+06:00  INFO 25756 --- [producer] [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2024-06-24T18:09:59.169+06:00  INFO 25756 --- [producer] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2024-06-24T18:09:59.248+06:00  INFO 25756 --- [producer] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 72 ms. Found 1 MongoDB repository interface.
+2024-06-24T18:10:00.014+06:00  INFO 25756 --- [producer] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-06-24T18:10:00.034+06:00  INFO 25756 --- [producer] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-06-24T18:10:00.035+06:00  INFO 25756 --- [producer] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.24]
+2024-06-24T18:10:00.125+06:00  INFO 25756 --- [producer] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-06-24T18:10:00.125+06:00  INFO 25756 --- [producer] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1784 ms
+2024-06-24T18:10:00.440+06:00  INFO 25756 --- [producer] [main] org.mongodb.driver.client                : MongoClient with metadata {"driver": {"name": "mongo-java-driver|sync|spring-boot", "version": "5.0.1"}, "os": {"type": "Windows", "name": "Windows 10", "architecture": "amd64", "version": "10.0"}, "platform": "Java/Amazon.com Inc./17.0.10+7-LTS"} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=null, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=null, transportSettings=null, commandListeners=[], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, CollectionCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.client.model.mql.ExpressionCodecProvider@79f90a3a, com.mongodb.Jep395RecordCodecProvider@22bdb1d0, com.mongodb.KotlinCodecProvider@67b355c8]}, loggerSettings=LoggerSettings{maxDocumentLength=1000}, clusterSettings={hosts=[localhost:27017], srvServiceName=mongodb, mode=SINGLE, requiredClusterType=UNKNOWN, requiredReplicaSetName='null', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='15 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=false, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=JAVA_LEGACY, serverApi=null, autoEncryptionSettings=null, dnsClient=null, inetAddressResolver=null, contextProvider=null}
+2024-06-24T18:10:00.451+06:00  INFO 25756 --- [producer] [cluster-ClusterId{value='66796218c78744663837b0c5', description='null'}-localhost:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=21, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=29953600}
+2024-06-24T18:10:00.995+06:00 DEBUG 25756 --- [producer] [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 3 mappings in 'requestMappingHandlerMapping'
+2024-06-24T18:10:01.095+06:00 DEBUG 25756 --- [producer] [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2024-06-24T18:10:01.142+06:00 DEBUG 25756 --- [producer] [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-06-24T18:10:01.185+06:00 DEBUG 25756 --- [producer] [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-06-24T18:10:01.422+06:00  INFO 25756 --- [producer] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-06-24T18:10:01.434+06:00  INFO 25756 --- [producer] [main] com.event.producer.ProducerApplication   : Started ProducerApplication in 3.682 seconds (process running for 4.379)
+2024-06-24T18:10:13.949+06:00  INFO 25756 --- [producer] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-06-24T18:10:13.950+06:00  INFO 25756 --- [producer] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-06-24T18:10:13.950+06:00 DEBUG 25756 --- [producer] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2024-06-24T18:10:13.950+06:00 DEBUG 25756 --- [producer] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2024-06-24T18:10:13.951+06:00 DEBUG 25756 --- [producer] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2024-06-24T18:10:13.952+06:00 DEBUG 25756 --- [producer] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@aca3c85
+2024-06-24T18:10:13.954+06:00 DEBUG 25756 --- [producer] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@70c29356
+2024-06-24T18:10:13.954+06:00 DEBUG 25756 --- [producer] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2024-06-24T18:10:13.955+06:00  INFO 25756 --- [producer] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
+2024-06-24T18:10:13.969+06:00 DEBUG 25756 --- [producer] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : POST "/api/student/register/v1", parameters={}
+2024-06-24T18:10:13.987+06:00 DEBUG 25756 --- [producer] [http-nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.event.producer.controller.ProducerController#create(CreateStudentRequest)
+2024-06-24T18:10:14.129+06:00 DEBUG 25756 --- [producer] [http-nio-8080-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [CreateStudentRequest(id=1, firstName=masum, lastName=suzon, email=suzon@gmail.com)]
+2024-06-24T18:10:14.142+06:00  INFO 25756 --- [producer] [http-nio-8080-exec-1] c.e.p.controller.ProducerController      : Get request for student registration. Student Model: CreateStudentRequest(id=1, firstName=masum, lastName=suzon, email=suzon@gmail.com)
+2024-06-24T18:10:14.336+06:00 DEBUG 25756 --- [producer] [http-nio-8080-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2024-06-24T18:10:14.338+06:00 DEBUG 25756 --- [producer] [http-nio-8080-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Nothing to write: null body
+2024-06-24T18:10:14.342+06:00 DEBUG 25756 --- [producer] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-06-24T18:10:45.952+06:00 DEBUG 25756 --- [producer] [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : POST "/api/student/register/v1", parameters={}
+2024-06-24T18:10:45.953+06:00 DEBUG 25756 --- [producer] [http-nio-8080-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.event.producer.controller.ProducerController#create(CreateStudentRequest)
+2024-06-24T18:10:45.956+06:00 DEBUG 25756 --- [producer] [http-nio-8080-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [CreateStudentRequest(id=2, firstName=kawser, lastName=fakibaj, email=fakibaj@gmail.com)]
+2024-06-24T18:10:45.956+06:00  INFO 25756 --- [producer] [http-nio-8080-exec-3] c.e.p.controller.ProducerController      : Get request for student registration. Student Model: CreateStudentRequest(id=2, firstName=kawser, lastName=fakibaj, email=fakibaj@gmail.com)
+2024-06-24T18:10:45.960+06:00 DEBUG 25756 --- [producer] [http-nio-8080-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2024-06-24T18:10:45.961+06:00 DEBUG 25756 --- [producer] [http-nio-8080-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Nothing to write: null body
+2024-06-24T18:10:45.961+06:00 DEBUG 25756 --- [producer] [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
